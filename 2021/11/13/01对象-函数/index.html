@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#3367D6"/>
+  <link rel="apple-touch-icon" href="/icons-192.png">
+  <link rel="manifest" href="/manifest.json">
+  
+  <meta name="generator" content="Hexo 5.4.0">
+
+  
+    <meta name="description" content="WHATEVER U DO I CAN DO BETTER">
+  
+
+  
+
+  
+    <meta name="author" content="HUMILTY">
+  
+
+  
+
+  
+
+  <title>对象 函数 | HUMILITY</title>
+
+  
+
+  
+    <link rel="shortcut icon" href="/Rick.ico">
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.3/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/monokai.css">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+  <div class="root-container">
+    
+<!-- header container -->
+<header class="header-container post">
+  
+    <div class="post-image" style="background-image: url(/imgs/R&amp;M07.jpg)"></div>
+  
+
+  <!-- navbar -->
+<nav class="navbar">
+  <div class="navbar-content">
+    <!-- logo -->
+    <div class="navbar-logo">
+      <a href="/">
+        
+          HUMILITY
+        
+      </a>
+    </div>
+    <!-- link -->
+    <div class="navbar-link">
+      <div class="navbar-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-list">
+        
+          <li class="navbar-list-item"><a href="/">首页</a></li>
+        
+          <li class="navbar-list-item"><a href="/about">关于</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="header-content">
+      <div class="post-text layout-block">
+        <div class="layout-margin">
+          <h1 class="title-wrap">对象 函数</h1>
+          <h2 class="title-sub-wrap">
+            <strong>HUMILTY</strong>
+            <span>发布于</span>
+            <time  class="article-date" datetime="2021-11-13T02:15:23.000Z" itemprop="datePublished">2021-11-13</time>
+          </h2>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/categories/JavaScript/">📒 JavaScript</a></li>
+  
+</ul>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/tags/js/">🏷️ js</a></li>
+  
+</ul>
+        </div>
+      </div>
+    </div>
+  
+
+  
+  
+  
+</header>
+
+    <!-- 文章 -->
+
+<!-- 文章内容 -->
+<div class="body-container">
+  <article class="content-container layout-block post-container">
+    <div class="article-info">
+      
+      
+      
+      
+      <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
+        <h3 id="对象的简介"><a href="#对象的简介" class="headerlink" title="对象的简介"></a>对象的简介</h3><p><code>string</code> 字符串，<code>number</code> 数值，<code>Boolean</code> 布尔值，<code>null</code> 空值，<code>undefined</code>未定义。<br>以上这五种类型属于基本数据类型，以后我们看的值只要不是上边的五种，全都是对象。</p>
+<p><strong>Object 对象</strong><br>如果使用基本数据类型的数据，我们所创建的变量都是独立，不能成为一个整体。<br>对象属于一种复合的数据类型，在对象中可以保存多个不同数据类型的属性。</p>
+<p><strong>对象的分类：</strong> 1.内建对象（ES 标准中定义的对象，在任何的 ES 的实现中都可以使用。）<br>比如：<code>Math</code> <code>String</code> <code>Number</code> <code>Boolean</code> <code>Function</code> <code>Object</code>…</p>
+<p>2.宿主对象（由 JS 的运行环境提供的对象，目前来讲主要指由浏览器提供的对象。）<br>比如：<code>BOM</code> <code> DOM</code></p>
+<p>3.自定义对象（由开发人员自己创建的对象）</p>
+<h3 id="对象的基本操作"><a href="#对象的基本操作" class="headerlink" title="对象的基本操作"></a>对象的基本操作</h3><p>创建对象<br>使用 <code>new</code> 关键字第哦啊用的函数，是构造 <code>constructor</code><br>构造函数是专门用来创建对象的函数<br>使用 <code>typeof</code> 检查一个对象时，会返回 <code>object</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var obj = new Object();</span><br></pre></td></tr></table></figure>
+<p><strong>添加属性</strong><br>在对象中保存的值称为属性<br>向对象添加属性<br>语法：对象.属性名 = 属性值<br>向 <code>obj</code> 中添加一个 <code>name</code> 属性</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">obj.name = &quot;孙悟空&quot;;</span><br></pre></td></tr></table></figure>
+<p>向 obj 中添加一个 <code>gender</code> 属性</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">obj.gender = &quot;男&quot;;</span><br></pre></td></tr></table></figure>
+<p>向 obj 中添加一个 <code>age</code> 属性</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">obj.age = &quot;18&quot;</span><br></pre></td></tr></table></figure>
+
+<p><strong>读取对象中的属性</strong><br>语法：对象.属性名<br><code>console.log(obj.gender)</code><br>如果读取对象中没有的属性，不会报错而是会返回 <code>undefined</code></p>
+<p><strong>修改对象的属性</strong><br>语法：对象.属性名 = 新值</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">obj.name = &quot;Tom&quot;</span><br><span class="line">console.log(obj.name) //Tom 覆盖孙悟空</span><br></pre></td></tr></table></figure>
+
+<p><strong>删除对象的属性</strong><br>语法：<code>delete</code> 对象.属性名；</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">delete obj.name;</span><br></pre></td></tr></table></figure>
+
+<h3 id="属性名和属性值"><a href="#属性名和属性值" class="headerlink" title="属性名和属性值"></a>属性名和属性值</h3><p><strong>属性名</strong><br>对象的属性名不强制要求遵守标识符的规范，什么乱七八糟的名字都可以使用<br>但是尽量使用时按照标识符的规范去做<br>如果采用特殊的属性名，不能采用.的方式来操作，需要使用另一种方式。<br>读取时也要采用这种方式。<br>语法：对象[“属性名”] = 属性值</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">obj[&quot;123&quot;] = 789</span><br></pre></td></tr></table></figure>
+<p>使用[]这种形式去操作属性，更加的灵活<br>在[]中可以直接传递一个变量，这样变量值是多少就会读取哪个属性</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">obj[&quot;123&quot;] = 789;</span><br><span class="line">obj[&quot;nihao&quot;] = &quot;你好&quot;</span><br><span class="line"></span><br><span class="line">    var n = &quot;nihao&quot;;</span><br><span class="line">    console.log(obj[n]);  //输出你好</span><br></pre></td></tr></table></figure>
+<p><strong>属性值</strong><br>JS 对象的属性值，可以是任意的数据类型。甚至也可以是一个对象</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var obj = new Object();</span><br><span class="line">obj.name = &quot;猪八戒&quot;;</span><br><span class="line">var obj2 = new Object();</span><br><span class="line"></span><br><span class="line">        obj2.name = &quot;孙悟空&quot;;</span><br><span class="line"></span><br><span class="line">        obj = obj2 //将obj2设置为obj的属性</span><br><span class="line"></span><br><span class="line">        console.log(obj) //输出孙悟空</span><br></pre></td></tr></table></figure>
+<p><strong>in 运算符</strong><br>通过该运算符可以检查一个对象中是否含有指定的属性<br>如果有则返回 <code>true</code>，没有则返回 <code>false</code><br>语法：”属性名” in 对象</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(&quot;name&quot; in obj); //返回 true</span><br></pre></td></tr></table></figure>
+
+<h3 id="基本数据类型和引用数据类型"><a href="#基本数据类型和引用数据类型" class="headerlink" title="基本数据类型和引用数据类型"></a>基本数据类型和引用数据类型</h3><p><strong>基本数据类型</strong><br>JS 中的变量都是保存在栈内存中的，<br>基本数据类型的值直接在栈内存中存储。<br>值与值之间是独立存在的，修改一个变量不会影响其他的变量</p>
+<p><strong>引用数据类型</strong><br>对象是保存在堆内存中的，每创建一个新的对象，就会在堆内存中开辟出一个新的空间而变量保存的是变量的内存地址（对象的引用），如果两个变量保存的是同一个对象引用，当一个头盖骨一个变量修改属性时，另一个也会受到影响。</p>
+<p><strong>当比较两个基本数据类型的值时，就是比较值。</strong><br><strong>而比较两个引用数据类型时，它是比较的对象的内存地址</strong><br><strong>如果两个对象是一模一样的，但是地址不同，它也会返回 false</strong></p>
+<h3 id="对象字面量"><a href="#对象字面量" class="headerlink" title="对象字面量"></a>对象字面量</h3><p>使用对象字面量来创建一个字面量，更加简单。<br><code>var obj = &#123;&#125;；</code><br>使用对象字面量。可以在创建对象时，直接指定对象中的属性。<br>对象字面量的属性名可以加引号也可以不加，建议不加，<br>如果要使用一些特殊的名字，则必须加引号<br>属性名和属性值是一组一组的名值对结构，<br>名和值之间使用:（冒号）连接，多个名值对之间使用,（逗号）隔开<br>如果一个属性之后没有其他的属性了，就不要写，（逗号）<br>语法：{属性名:属性值,属性名:属性值…}</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var obj2 = &#123;name:&quot;猪八戒&quot;，</span><br><span class="line">age:28,</span><br><span class="line">gender:&quot;男&quot;  </span><br><span class="line"> &#125;；</span><br></pre></td></tr></table></figure>
+<h3 id="函数（function）的简介"><a href="#函数（function）的简介" class="headerlink" title="函数（function）的简介"></a>函数（function）的简介</h3><p>函数也是一个对象<br>函数中可以封装一些功能（代码），在需要时可以执行这些功能（代码）<br>函数中可以保存一些代码在需要的时候调用<br>使用 <code>typeof</code> 检查一个函数对象时，会返回 <code>function</code></p>
+<p><strong>方法一：创建一个函数对象（很少使用这个构造函数）</strong><br>我们在实际开发中很少使用构造函数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var fun = new Function();</span><br></pre></td></tr></table></figure>
+<p>可以将要封装的代码以字符串的形式传递给构造函数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var fun = new Function(&quot;console.log(&#x27;hello 这是我的第一个函数&#x27;);&quot;);</span><br></pre></td></tr></table></figure>
+<p>封装到函数中的代码不会立即执行<br>函数中的代码会在函数调用的时候执行<br>调用函数语法，函数对象()<br>当调用函数时，函数中封装的代码会按照顺序执行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fun();</span><br></pre></td></tr></table></figure>
+
+<p><strong>方法二：使用函数声明来创建一个函数</strong><br>语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function 函数名([形参 1，形参 2...形参 N])&#123;</span><br><span class="line">语句...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">    function fun2()&#123;</span><br><span class="line">        console.log(&quot;这是我第二个函数&quot;);</span><br><span class="line">        alert(&quot;哈哈啊&quot;);</span><br><span class="line">        document.write(&quot;哦吼，起飞！&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    fun2()      //调用函数</span><br></pre></td></tr></table></figure>
+<p><strong>方法三：使用函数表达式来创建一个函数</strong><br>语法：<br>var 函数名 = function([形参 1，形参 2…形参 N]){<br>语句…<br>};</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var fun3 = function()&#123;</span><br><span class="line">    console.log(&quot;我是匿名函数中封装的代码&quot;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">fun3();     //调用函数</span><br></pre></td></tr></table></figure>
+<h3 id="函数的参数"><a href="#函数的参数" class="headerlink" title="函数的参数"></a>函数的参数</h3><p>可以在函数的()中来指定一个或多个形参（形式参数）<br>多个形参之间使用,(逗号）隔开，声明形参就相当于在函数内部声明了对应的变量<br>但是并不赋值<br>定义一个用来求两个数和的函数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function sum(a,b)&#123;</span><br><span class="line">console.log(a+b);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>在调用函数时，可以在()中指定实参（实际参数）<br>实参将会赋值给函数中对应的形参</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sum(1,2); //输出 3</span><br><span class="line">sum(123,456); //输出 579 可以多次调用</span><br></pre></td></tr></table></figure>
+<p>调用函数时解析器不会检查实参的类型，<br>所以要注意是否有可能会接收到非法的参数，如果有可能则需要对实参数进行类型的检查<br>函数的实参可以是任意的数据类型<br>调用函数时，解析器也不会检查实参的数量<br>多余的实参不会被赋值<br>如果实参的数量少于形参的数量，则没有对应实参的形参将是 <code>undefined</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sum(123,456,&quot;hello&quot;,true,false)； //输出 579</span><br><span class="line">sum(123); //输出 NaN</span><br></pre></td></tr></table></figure>
+<h3 id="函数的返回值"><a href="#函数的返回值" class="headerlink" title="函数的返回值"></a>函数的返回值</h3><p>创建一个函数，用来计算三数之和<br>可以使用 return 来设置函数的返回值<br>语法：<br><code>return</code> 值<br><code>return</code> 后的值将会作为函数的执行结果返回<br>可以定义一个变量来接收该结果<br>在函数中 <code>return</code> 后的代码都不会执行<br>如果 <code>return</code> 语句后不跟任何值就相当于返回一个 undefined，<br>如果函数中不写 <code>return</code>，则也会返回 <code>undefined。</code></p>
+<p><code>return</code> 后可以跟任意类型的值</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function sum(a,b,c)&#123;</span><br><span class="line"></span><br><span class="line">        var d = a + b + c；</span><br><span class="line"></span><br><span class="line">        return d;</span><br><span class="line">    &#125;;</span><br></pre></td></tr></table></figure>
+<p>调用函数<br>变量 <code>result</code> 的值就是函数的执行结果<br>函数返回声明 <code>result</code> 的值就是什么</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var result = sum(4,7,8);</span><br><span class="line"></span><br><span class="line">    console.log(&quot;result = &quot;+result);    //输出result = 19</span><br></pre></td></tr></table></figure>
+<h3 id="实参可以是任意值"><a href="#实参可以是任意值" class="headerlink" title="实参可以是任意值"></a>实参可以是任意值</h3><p>实参可以是任意的数据类型，也可以是一个对象<br>当我们的参数过多时，可以将参数封装到一个对象中，如何通过对象传递</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function sayHello(o) &#123;</span><br><span class="line">console.log(&quot;我是&quot; + o.name + &quot;,今年我&quot; + o.age + &quot;岁了，&quot; + &quot;我是一个&quot; + o.gender + &quot;人&quot; + &quot;,我住在&quot; + o.address);</span><br><span class="line">&#125;</span><br><span class="line">var obj = &#123;</span><br><span class="line">name: &quot;孙悟空&quot;,</span><br><span class="line">age: &quot;18&quot;,</span><br><span class="line">gender: &quot;男&quot;,</span><br><span class="line">address: &quot;花果山&quot;,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">        sayHello(obj);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>实参可以是一个对象，也可以是一个函数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function fun(a)&#123;</span><br><span class="line">a(obj);</span><br><span class="line">&#125;</span><br><span class="line">fun(sayHello);</span><br></pre></td></tr></table></figure>
+<h3 id="返回值的类型"><a href="#返回值的类型" class="headerlink" title="返回值的类型"></a>返回值的类型</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function fun()&#123;</span><br><span class="line">alert(&quot;函数要执行了&quot;);</span><br><span class="line"></span><br><span class="line">        for(var i=0 ; i&lt;5 ; i++)&#123;</span><br><span class="line"></span><br><span class="line">            if(i==2)&#123;</span><br><span class="line">                break;      //使用退出当前循环</span><br><span class="line">                continue;   //用于跳过档次循环</span><br><span class="line">                return;     //用于结束整个函数</span><br><span class="line">            &#125;</span><br><span class="line">                console.log(i);</span><br><span class="line">        &#125;</span><br><span class="line">                alert(&quot;函数要执行完了&quot;);</span><br><span class="line">     &#125;</span><br><span class="line">    fun();</span><br></pre></td></tr></table></figure>
+<p>返回值可以是任意的数据类型<br>也可以是对象<br>也可以是一个函数</p>
+<h3 id="立即执行函数"><a href="#立即执行函数" class="headerlink" title="立即执行函数"></a>立即执行函数</h3><p>函数定义完立即被调用，这种函数叫做立即执行函数<br>立即执行函数，往往只会执行一次</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">(function()&#123;</span><br><span class="line">alert(&quot;我是一个匿名函数&quot;); //此函数加括号为一整体不会报错 不加会报错</span><br><span class="line">&#125;)();</span><br><span class="line"></span><br><span class="line">    (function(a,b)&#123;</span><br><span class="line">    console.log(&quot;a=&quot;+a);</span><br><span class="line">    console.log(&quot;b=&quot;+b);</span><br><span class="line">    &#125;)(123,456);</span><br></pre></td></tr></table></figure>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><p>创建一个对象</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var obj = new Object();</span><br></pre></td></tr></table></figure>
+<p>添加属性</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">obj.name = &quot;孙悟空&quot;;</span><br><span class="line">obj.age = 18;</span><br></pre></td></tr></table></figure>
+<p>对象的属性值可以是任何的数据类型，也可以是函数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">obj.sayName = function()&#123;</span><br><span class="line">console.log(obj.name);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">    function fun()&#123;</span><br><span class="line">        console.log(obj.name);</span><br><span class="line">    &#125;;</span><br></pre></td></tr></table></figure>
+<p>调方法</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">obj.sayName();</span><br></pre></td></tr></table></figure>
+<p>调函数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fun();</span><br></pre></td></tr></table></figure>
+<p>函数也可以成为对象的属性，<br>如果一个函数作为一个对象的属性保存<br>那么我们称这个函数是我们这个对象的方法<br>调用这个函数就说调用对象的方法（method）</p>
+<p>但是它只是名称上的区别没有其他的区别</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var obj2 = &#123;</span><br><span class="line">    name:&quot;猪八戒&quot;,</span><br><span class="line">    age:18,</span><br><span class="line">    sayName:function()&#123;</span><br><span class="line">        console.log(obj2.name);     //输出孙悟空</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">obj2.sayName();     //输出猪八戒</span><br></pre></td></tr></table></figure>
+<h3 id="枚举对象中的属性使用-for…in-语句"><a href="#枚举对象中的属性使用-for…in-语句" class="headerlink" title="枚举对象中的属性使用 for…in 语句"></a>枚举对象中的属性使用 for…in 语句</h3><p>语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">for(var 变量 in 对象)&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var obj = &#123;</span><br><span class="line">name:&quot;猪八戒&quot;,</span><br><span class="line">age:18,</span><br><span class="line">gender:&quot;男&quot;,</span><br><span class="line">address:&quot;花果山&quot;,</span><br><span class="line">&#125;</span><br><span class="line">for(var n in obj)&#123;</span><br><span class="line">console.log(&quot;hello&quot;); //输出 4 次 hello，因为 obj 有四个属性</span><br><span class="line">&#125;  </span><br><span class="line">for...in 语句 对象中有几个属性，循环就会执行几次</span><br><span class="line">每次执行时会将对象中的一个属性的名字赋值给变量</span><br><span class="line">for(var n in obj)&#123;</span><br><span class="line">console.log(&quot;属性名:&quot;+n); //输出对应属性名 name，age，gender，address</span><br><span class="line">console.log(&quot;属性值:&quot;+obj[n]); //输出值孙悟空 18 男 花果山</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      </section>
+
+      
+      
+        <nav class="article-nav">
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="/imgs/R&amp;M05.jpg"></div>
+    
+    <div class="card-text">
+      
+        <a href="/2021/11/13/04%E4%BD%9C%E7%94%A8%E5%9F%9F-this-%E5%8E%9F%E5%9E%8B/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">作用域 this 原型</h2>
+        </a>
+      
+      <div class="card-text--row">Newer</div>
+    </div>
+  </article>
+</div>
+          
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="/imgs/R&amp;M08.jpg"></div>
+    
+    <div class="card-text">
+      
+        <a href="/2021/11/13/12_if%E5%92%8Cfor%E5%BE%AA%E7%8E%AF/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">if和for循环</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
+          
+        </nav>
+      
+
+      <section class="page-message-container layout-padding">
+        
+
+
+  
+  
+
+  
+  
+
+
+      </section>
+    </div>
+    <div class="widget-info">
+      <section class="widget-author widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-body">
+    
+      <img src="/imgs/head.jpg" class="soft-size--round soft-style--box" alt="HUMILTY">
+    
+    
+      <h2>HUMILTY</h2>
+    
+    
+      <p>Not Rick BE Rick</p>
+    
+
+    <div class="count-box">
+      <div class="count-box--item">
+        <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
+</svg>
+        <span>21</span>
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+        2
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+        3
+      </div>
+    </div>
+  </div>
+</section>
+
+      
+
+      
+<section class="widet-notice widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-notice" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M512 945.02305225v28.15620663a24.27259221 24.27259221 0 0 1-24.27259221 24.27259335H394.0352a48.54518557 48.54518557 0 0 1-41.74885888-23.78714112l-110.68302222-184.47170332a132.04290333 132.04290333 0 0 1-17.47626667-48.54518557h118.4502511a200.97706667 200.97706667 0 0 1 76.21594113 14.56355556l20.38897777 133.49925888a48.54518557 48.54518557 0 0 0 36.40888888 27.67075555l16.01991111 2.91271112a24.27259221 24.27259221 0 0 1 20.38897778 25.72894889zM997.45185223 463.45481443a194.18074112 194.18074112 0 0 1-38.8361489 116.50844445 24.75804445 24.75804445 0 0 1-36.4088889 0l-34.95253333-34.95253333a24.27259221 24.27259221 0 0 1-2.91271111-30.58346667 97.09036999 97.09036999 0 0 0 0-106.79940665 24.27259221 24.27259221 0 0 1 2.91271111-30.58346666l34.95253333-34.95253334a24.75804445 24.75804445 0 0 1 18.93262223-7.28177777 26.2144 26.2144 0 0 1 17.47626667 9.70903665A194.18074112 194.18074112 0 0 1 997.45185223 463.45481443z m-194.18074112-388.36148111v776.72296335a48.54518557 48.54518557 0 0 1-48.54518556 48.54518443h-28.64165888a48.54518557 48.54518557 0 0 1-33.98163001-14.07810332l-145.63555556-143.20829668A291.27111111 291.27111111 0 0 0 342.57730333 657.63555556H172.18370333a145.63555556 145.63555556 0 0 1-145.63555556-145.63555556v-97.09036999a145.63555556 145.63555556 0 0 1 145.63555556-145.63555556h170.3936a291.27111111 291.27111111 0 0 0 206.31703779-85.43952668l145.63555555-143.20829554a48.54518557 48.54518557 0 0 1 33.98162888-14.07810446H754.72592555a48.54518557 48.54518557 0 0 1 48.54518556 48.54518555z" fill="currentColor"></path>
+</svg>
+    <span>NOTICE</span>
+  </div>
+  <div class="widget-body">
+    <p>To live is to risk it all</p>
+  </div>
+</section>
+
+
+      <section class="widget-categorys widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+    <span>CATEGORYS</span>
+  </div>
+  <div class="widget-body">
+    <ul class="categorys-list">
+      
+        <li class="categorys-list-item">
+          <a href="/categories/JavaScript/">
+            JavaScript (14)
+          </a>
+        </li>
+      
+        <li class="categorys-list-item">
+          <a href="/categories/%E5%89%8D%E7%AB%AF%E4%B8%89%E5%89%91%E5%AE%A2/">
+            前端三剑客 (7)
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+</section>
+
+      <section class="widget-tags widget-item  layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+    <span>TAGS</span>
+  </div>
+  <div class="widget-body">
+    <div class="tags-cloud">
+      <a href="/tags/css/" style="font-size: 15px;" class="tags-cloud-5">css</a> <a href="/tags/html/" style="font-size: 10px;" class="tags-cloud-0">html</a> <a href="/tags/js/" style="font-size: 20px;" class="tags-cloud-10">js</a>
+    </div>
+  </div>
+</section>
+    </div>
+  </article>
+</div>
+
+    <!-- footer container -->
+<footer id="footer" class="footer">
+  <div class="footer-container">
+    
+    <div class="social-icons">
+      
+        
+      
+        
+      
+        
+      
+        
+          <a href="https://github.com/Th1Humble" class="soft-size--primary soft-style--box" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-github" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M64.6 512c0 195.6 125.4 361.9 300.1 422.9 23.5 5.9 19.9-10.8 19.9-22.2v-77.6c-135.8 15.9-141.3-74-150.5-89-18.5-31.5-61.9-39.5-49-54.5 31-15.9 62.5 4 98.9 58 26.4 39.1 77.9 32.5 104.1 26 5.7-23.5 17.9-44.5 34.7-60.9-140.7-25.2-199.4-111.1-199.4-213.3 0-49.5 16.4-95.1 48.4-131.8-20.4-60.6 1.9-112.4 4.9-120.1 58.2-5.2 118.5 41.6 123.3 45.3 33.1-8.9 70.8-13.7 112.9-13.7 42.4 0 80.3 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.4-43.9 2.9 7.7 24.7 58.3 5.5 118.1 32.5 36.8 49 82.8 49 132.4 0 102.3-59 188.3-200.2 213.2 23.5 23.3 38.1 55.5 38.1 91.1v112.7c0.8 9 0 17.9 15.1 17.9C832.7 877 960.4 709.4 960.4 512.1c0-247.5-200.6-447.9-447.9-447.9C265 64.1 64.6 264.5 64.6 512z"></path>
+</svg>
+          </a>
+        
+      
+        
+      
+    </div>
+     
+    <p>&copy; 2022 <a href="/" target="_blank">HUMILTY</a></p>
+
+    
+
+    <p>Powered by <a href="https://hexo.io" target="_blank" rel="noopener noreferrer">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank" rel="noopener noreferrer author">flex-block</a></p>
+
+    <p>
+      <a href="javascript:;" id="theme-light">🌞 浅色</a>
+      <a href="javascript:;" id="theme-dark">🌛 深色</a>
+      <a href="javascript:;" id="theme-auto">🤖️ 自动</a>
+    </p>
+  </div>
+</footer>
+  </div>
+
+  <div class="back-to-top-fixed soft-size--round soft-style--box">
+    <svg class="icon icon-back-to-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <path d="M725.333333 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8l-213.333333-213.333333c-17.066667-17.066667-17.066667-42.666667 0-59.733333s42.666667-17.066667 59.733333 0l213.333333 213.333333c17.066667 17.066667 17.066667 42.666667 0 59.733333C746.666667 422.4 738.133333 426.666667 725.333333 426.666667z"></path>
+      <path d="M298.666667 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8-17.066667-17.066667-17.066667-42.666667 0-59.733333l213.333333-213.333333c17.066667-17.066667 42.666667-17.066667 59.733333 0s17.066667 42.666667 0 59.733333l-213.333333 213.333333C320 422.4 311.466667 426.666667 298.666667 426.666667z"></path>
+      <path d="M512 896c-25.6 0-42.666667-17.066667-42.666667-42.666667L469.333333 170.666667c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 682.666667C554.666667 878.933333 537.6 896 512 896z"></path>
+    </svg>
+  </div>
+
+  
+  <!-- aplayer -->
+
+
+<!-- dplayer -->
+
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+  
+  <!-- 尾部用户自定义相关内容 -->
+</body>
+</html>

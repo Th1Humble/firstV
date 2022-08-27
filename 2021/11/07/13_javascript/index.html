@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#3367D6"/>
+  <link rel="apple-touch-icon" href="/icons-192.png">
+  <link rel="manifest" href="/manifest.json">
+  
+  <meta name="generator" content="Hexo 5.4.0">
+
+  
+    <meta name="description" content="WHATEVER U DO I CAN DO BETTER">
+  
+
+  
+
+  
+    <meta name="author" content="HUMILTY">
+  
+
+  
+
+  
+
+  <title>javascript | HUMILITY</title>
+
+  
+
+  
+    <link rel="shortcut icon" href="/Rick.ico">
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.3/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/monokai.css">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+  <div class="root-container">
+    
+<!-- header container -->
+<header class="header-container post">
+  
+    <div class="post-image" style="background-image: url(/imgs/db1.jpg)"></div>
+  
+
+  <!-- navbar -->
+<nav class="navbar">
+  <div class="navbar-content">
+    <!-- logo -->
+    <div class="navbar-logo">
+      <a href="/">
+        
+          HUMILITY
+        
+      </a>
+    </div>
+    <!-- link -->
+    <div class="navbar-link">
+      <div class="navbar-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-list">
+        
+          <li class="navbar-list-item"><a href="/">首页</a></li>
+        
+          <li class="navbar-list-item"><a href="/about">关于</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="header-content">
+      <div class="post-text layout-block">
+        <div class="layout-margin">
+          <h1 class="title-wrap">javascript</h1>
+          <h2 class="title-sub-wrap">
+            <strong>HUMILTY</strong>
+            <span>发布于</span>
+            <time  class="article-date" datetime="2021-11-07T06:53:10.000Z" itemprop="datePublished">2021-11-07</time>
+          </h2>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/categories/%E5%89%8D%E7%AB%AF%E4%B8%89%E5%89%91%E5%AE%A2/">📒 前端三剑客</a></li>
+  
+</ul>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/tags/js/">🏷️ js</a></li>
+  
+</ul>
+        </div>
+      </div>
+    </div>
+  
+
+  
+  
+  
+</header>
+
+    <!-- 文章 -->
+
+<!-- 文章内容 -->
+<div class="body-container">
+  <article class="content-container layout-block post-container">
+    <div class="article-info">
+      
+      
+      
+      
+      <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
+        <h2 id="什么是JavaScript"><a href="#什么是JavaScript" class="headerlink" title="什么是JavaScript"></a>什么是JavaScript</h2><p>JavaScript是一种运行于JavaScript解释器/引擎中的解释型脚本语言<br><strong>运行环境：</strong></p>
+<ol>
+<li>独立安装的JS解释器（NodeJs）</li>
+<li>嵌入在 浏览器 内核中JS解释器</li>
+</ol>
+<p><strong>解释型：</strong><br>运行之前是不需要编译的，运行之前不会检查错误，知道碰到错误为止<br><strong>编译型：</strong><br>对源码进行编译，还能检查语法错误（C/C++）</p>
+<h2 id="JS组成"><a href="#JS组成" class="headerlink" title="JS组成"></a>JS组成</h2><ol>
+<li>核心（ECMAScript）</li>
+<li>文档对象模型（DOM，Document Object Model）让JS有能力与网页进行对话</li>
+<li>浏览器对象模型（BOM，Browser Object Model）让JS有能力与浏览器进行对话<h3 id="将JS脚本嵌入在HTML页面中指行的步骤"><a href="#将JS脚本嵌入在HTML页面中指行的步骤" class="headerlink" title="将JS脚本嵌入在HTML页面中指行的步骤"></a>将JS脚本嵌入在HTML页面中指行的步骤</h3></li>
+<li>将JS代码嵌入在元素“事件”中<br>onclick：当单击元素时所做的操作<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;&quot;onclick=&quot;JS代码&quot;&gt;xxx&lt;/div&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">      &lt;button onclick=&quot;console.log(&#x27;Hello World&#x27;);&quot;&gt;</span><br><span class="line">             打印消息</span><br><span class="line">      &lt;/button&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"> &lt;/html&gt;</span><br></pre></td></tr></table></figure></li>
+<li>将JS代码嵌入在 <code>&lt;script&gt;</code>标签中<br><code>&lt;script&gt;&lt;/script&gt;</code><br>允许出现网页的任意位置处<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">   &lt;body&gt;</span><br><span class="line">        页头</span><br><span class="line">        &lt;hr/&gt;</span><br><span class="line">        &lt;script&gt;</span><br><span class="line">                document.write(&#x27;&lt;b&gt;欢迎&lt;/b&gt;&#x27;);</span><br><span class="line">                console.log(&#x27;脚本指行结束了。。。&#x27;);</span><br><span class="line">        &lt;/script&gt;</span><br><span class="line">        &lt;hr/&gt;</span><br><span class="line">        页尾</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">  &lt;/html&gt;</span><br></pre></td></tr></table></figure></li>
+<li>写在外部脚本文件中（**.js）</li>
+</ol>
+<ul>
+<li>创建js文件编写代码***.js</li>
+<li>在页面中引入js文件<code>&lt;script src=&quot;js文件路径&quot;&gt;&lt;/script&gt;</code></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">   &lt;head&gt;</span><br><span class="line">        &lt;script src=&quot;myscript.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">   &lt;/head&gt;</span><br><span class="line">   &lt;body&gt;</span><br><span class="line">   &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意</strong><br>已经引入外部文件，在此文件不得出现js代码</p>
+<h3 id="语法规范"><a href="#语法规范" class="headerlink" title="语法规范"></a>语法规范</h3><ol>
+<li><p>语句<br>允许被JS引擎所解释的代码使用分号来表示结束<br><code>console.log()</code>;<br><code>document.write()</code>;<br>大小写敏感<br><code>console.log()</code>;正确<br><code>Console.log()</code>;错误<br>英文标点符号<br><code>console.log(&quot;&quot;)</code>;正确<br><code>console.log（“”）</code>;错误<br>由表达式、关键词、运算符组成</p>
+</li>
+<li><p>注释<br>单行注释：//<br>多行注释：/**/</p>
+</li>
+</ol>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p><strong>就是内存中的一段存储空间</strong><br><strong>名：</strong>内存空间的别名，可以自定义<br><strong>值：</strong>保存在内存空间中的数据<br><strong>内存：</strong><br>8bit（比特是表示信息的最小单位）=1byte<br>1024byte=1kb<br>1024kb=1mb<br>1024mb=1gb<br>1024gb=1tb</p>
+<h3 id="变量的声明"><a href="#变量的声明" class="headerlink" title="变量的声明"></a>变量的声明</h3><p><strong>声明</strong><br><strong>var变量名</strong>；<code>var userName</code><br><strong>赋值</strong>     ；<code>var bookPrice=25.5</code>；<br><strong>变量名=值</strong><br><strong>声明过程中，尽量不要省略var关键字，否则声明的是“全局变量”</strong></p>
+<p>例子：<br><strong>声明一个变量</strong><br>保存学员的年龄，值为25<br><strong>语法</strong><br><code>var age</code>；<br><code>age=25</code>；<br>或声明直接赋值<br>var变量名=值；<br>ex：<code>var age=25</code><br>在<code>console.log()</code>或<code>document.write()</code>使用变量名 取代””打印 变量 stuName的值到控制台上</p>
+<p><code>var stuName=&quot;pp.xz&quot;</code><br><code>console.log(stuName);--pp.xz</code><br><code>console.log(&quot;stuName&quot;);--stuName</code>  加了双引号则输出stuName</p>
+<p><strong>一次性声明多个变量赋值</strong><br><strong>语法</strong><br>var变量名1，var变量名2，…var变量名n<br><code>var stuName=&quot;pp.xz&quot;,stuAge=25,stuHeight</code>;<br>等同于<br><code>var stuName=&quot;pp.xz&quot;</code>;<br><code>var stuAge=25</code>;<br><code>var stuHeight</code>;</p>
+<h3 id="变量名-声明规范"><a href="#变量名-声明规范" class="headerlink" title="变量名 声明规范"></a>变量名 声明规范</h3><p><strong>1.不允许使用JS的关键字和保留关键字</strong><br>break case catch continue default delete do else false finally for function if in ……<br><strong>2.由字母、数字、下划线以及$组成</strong><br>var stuName<br>var stuName1<br>var stu_Name<br>var stu$Name<br><strong>3.不能以数字开头</strong><br>var stuName1<br>var 1stuName错误<br>var $stuName正确<br><strong>4.尽量见名知意</strong><br>var a,b,c,d,ad,ac;<br>var stuName,stuAge;更推荐<br><strong>5.可以采用”驼峰命名法”</strong><br>变量名为合成词时，第一个单词全小写，从第二个单词开始，每个单词首字符大写 var stuName 如果只有一个单词全小写var name    </p>
+<h3 id="变量的使用"><a href="#变量的使用" class="headerlink" title="变量的使用"></a>变量的使用</h3><p>var stuName=”小猪佩奇”;<br>console.log(stuName);<br>var stuAge;<br>console.log(stuAge);</p>
+<p>变量声明后，从未赋值，称之为未经初始化变量。<br>变量如果未被定义过，直接打印或使用<br>console.log(stuHeight);<br>结果为错误。</p>
+<h4 id="对变量的存取操作"><a href="#对变量的存取操作" class="headerlink" title="对变量的存取操作"></a>对变量的存取操作</h4><ol>
+<li>获取变量的值-GET操作<br> var usePwd=’123456’; console.log(usePwd);<br> document.write(usePwd);<br> var newPwd=usePwd;(创建新变量，赋值为已有变量的值）</li>
+<li>保存（设置）变量的值-SET操作<br> var oldPwd=’123’ oldPwd=’456’;<br> oldPwd=newPwd;（此语句对于变量newPwd是GET操作；对于变量oldPwd是SET操作）</li>
+</ol>
+<h4 id="变量的使用-1"><a href="#变量的使用-1" class="headerlink" title="变量的使用"></a>变量的使用</h4><p>**=<strong>出现的话，永远都是将</strong>=<strong>右边的东西保存在</strong>=<strong>左边的变量</strong>=**左边必须是变量<br>var stuAge=30；//将30保存在stuAge中<br>35=30;// 将30保存在35中，错误！！！</p>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><h4 id="原本类型（基础类型）"><a href="#原本类型（基础类型）" class="headerlink" title="原本类型（基础类型）"></a>原本类型（基础类型）</h4><p><strong>1.数字类型</strong><br>number类型<br>可以表示32位的整数以及64位的浮点数<br>整数：32位即4字节<br>浮点数：即小数，64位，8字节<br>整数：<br>十进制：生活中常用数字<br>八进制：逢八进一<br>var n1=0123<br>十六进制：逢十六进一<br>0-9 A-F组成<br>var n2=0x123<br>小数：<br>var n1=34.56<br>var n2=4.5e10</p>
+<p><strong>2.字符串类型</strong><br>表示一系列的文本字符数据由Unicode字符，数字，标点组成Unicode下所有的的字符，数字，标点在内存中都占2字节</p>
+<p>“张”.charCodeAt().toString(16)<br>查看字符”张”的十六进制表现方式<br>结果为：5f20<br>\u4e00：汉字的起始字符<br>\u9fa5：汉字的结束字符<br><strong>转义字符</strong><br>1.\n 换行<br>2.\r 回车<br>3.\t 一个制表符<br><strong>3.布尔类型</strong><br>boolean类型<br>作用：用于表示 条件的结果<br>取值：<br>true：真，肯定的结果<br>false：假，否定的结果<br>ex：<br>var r1=true；<br>var r2=false；<br>除条件判断外，做运算时，true当做1运算，false当做0运算<br><strong>4.空</strong><br>null   声明对象未赋值<br><strong>5.未定义</strong><br>undefined<br>1.声明变量未赋值<br>2.访问对象不存在属性</p>
+<h4 id="数据类型转换"><a href="#数据类型转换" class="headerlink" title="数据类型转换"></a>数据类型转换</h4><p>js是弱类型语言<br>由数据来决定变量的数据类型是什么<br>var stu;//undefined<br>var 20;//number<br>var “25”//string<br>不同类型数据在运算过程中如何处理？<br>var num1=15;//number<br>var num2=13;//number<br>var result=num1+num2;//28-&gt;number<br>var str1=”15”;//string<br>var result1=num1+str1</p>
+<h4 id="隐式转换"><a href="#隐式转换" class="headerlink" title="隐式转换"></a>隐式转换</h4><p>自动转换，由JS在运算过程中，自己转换的操作，不需要人为参与<br><strong>1.函数</strong><br>typeof()或typeof<br>ex：<br>var num1=；<br>var s=typeof(num1);:获取num1的数据类型<br>var s1=typeof num1;:获取num1的数据类型<br><strong>2.NaN</strong><br>Not A Number不是一个数字<br>is NaN（数据）：判断 数据是否为 非数字<br>是不是一个数字<br>结果为boolean<br>结果为true：<strong>不是一个数字</strong><br>结果为false：<strong>是一个数字</strong><br>注：所有的数据类型与string做+运算时，最后的结果都为string<br>####显示转换（强制转换）<br><strong>toString()</strong><br>将任意类型的数据转换为string类型<br>变量.toString（）；<br>会得到一个全新的结果，类型为string<br>var num=15;<br>var str=num+””;<br><strong>parseInt()</strong><br>整型：Integer<br>作用：获取指定数据的整数部分<br>语法：<br>var result=parseInt（数据）<br>注意：<br>parseInt，从左往右依次转换，碰到第一个非整数字符，则停止转换。如果第一个字符就是非整数字符的话，结果为NaN.<br><strong>parseFloat()</strong><br>Float:浮点类型-&gt;小数<br>作用：将指定数据转换成小数<br>语法；var result=parseFloat(数据)<br>ex：<br>var result=parseFloat(“35.25”);//35.25<br>var result=parseFloat(“35.2你好”);//35.2<br>var result=parseFloat(“你好35.2”);//NaN<br><strong>Number()</strong><br>作用：将一个字符串解析为number<br>语法：var result=Number(数据)<br>注意：如果包含非法字符，则返回NaN</p>
+<h3 id="运算符-amp-表达式"><a href="#运算符-amp-表达式" class="headerlink" title="运算符&amp;表达式"></a>运算符&amp;表达式</h3><p><strong>运算符：</strong>能够完成数据计算的一组符合，比如：+-*/<br><strong>表达式：</strong>由运算符和操作数所组成的式子叫做表达式，每个表达式都有自己的值。</p>
+<h4 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h4><p><strong>算术运算符：</strong>加（+）减（-）乘（*）除（/）求余（%）<br><strong>-：</strong>可以表示减号，也可以表示负号，如：x=-y<br><strong>+：</strong>可以表示加法，也可以表示字符串的连接<br>    ex：<br>        var num1=15；<br>        var num2=18；<br>        var num3=”15”</p>
+<pre><code>    console.log(num1+num2);//33
+    console.log(num1+num3);//1515  （拼接）
+</code></pre>
+<p>** ✖：*<em>15</em>2=30<br><strong>/：</strong>15/2=7.5<br><strong>%：</strong><br>取余操作，俗称 模<br>作用：取两个数字的余数<br>    ex：<br>    var i=10%3        //i值为1<br>使用场合：<br>1.判断数字的奇偶性<br>2.获取数字的最后几位<br><strong>++：</strong>自增，在数值基础上，进行+1操作<br><strong>–：</strong>自减，在数值基础上，进行-1操作<br>i++；   //相当于i=i+1；</p>
+<p>i–；   //相当于i=i-1；</p>
+<p>i=1；<br>j=i++；  //i结果为2，j结果为1（先操作再加）</p>
+<p>i=1；<br>j=++i；  //i结果为2，j结果为2（先加再操作）</p>
+<h4 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h4><p>作用：判断数据之间的大小关系<br>运算符：<br><strong>＞：</strong>大于<br><strong>＜：</strong>小于<br>**＞=:**大于等于<br>**＜=:**小于等于<br>**==:**判断等于 （不比较类型，只比较数值）<br><strong>！==：</strong>不等于<br><strong>===：</strong>全等  （除数值外，连同类型也一起比较）<br><strong>！==：</strong>不全等<br>关系表达式的运算结果为boolean类型（true或者false）</p>
+<h4 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h4><p>1作用：关联条件<br>ex：<br>  判断考试分数是否在60-80之间<br>  var score=52；<br>  条件1：score&gt;=60<br>  条件2：score&lt;=80<br>2.逻辑运算符<br>逻辑与：&amp;&amp;<br>逻辑或：||<br>逻辑非：！</p>
+<p>例子：<br><strong>逻辑与</strong><br>关联两个条件，两个条件都为真的时候，整个表达式结果才为真<br>语法：<br><strong>条件一&amp;&amp;条件二</strong><br>问题：判断考试分数是否在60~80之间<br>var score=52;<br>条件1：score&gt;=60<br>条件2：score&lt;=80<br>var result=score&gt;=60&amp;&amp;score&lt;=80;</p>
+<p><strong>逻辑或</strong><br>关联两个条件，两个条件中，只要有一个为真，那么整个表达式的结果就为真<br>语法：<br><strong>条件一||条件二</strong><br>问题：笔试题和面试题，笔试题或面试题的分数，有一个超过60就认为合格<br>var bishi=52；<br>var mianshi=82；<br>条件一：bishi&gt;=60<br>条件二：mianshi&gt;=60</p>
+<p>var result=bishi&gt;=60||mianshi&gt;=60;</p>
+<p><strong>逻辑非</strong><br>对条件取反<br>注意：逻辑非，只有一个操作数<br>语法：！条件</p>
+<p>非真既假<br>非假即真</p>
+<h4 id="短路逻辑"><a href="#短路逻辑" class="headerlink" title="短路逻辑"></a>短路逻辑</h4><p><strong>短路&amp;&amp;</strong><br>如果第一个条件已经是false的话，那么就不会再判断第二个条件，那么整个表达式的值，就是false<br>如果第一个条件是ture的话，则继续判断第二个条件，并且以第二个表达式的值，作为整个表达式的值</p>
+<p><strong>短路||</strong><br>如果第一个条件已经是true的话，那么就不会再判断第二个条件，那么整个表达式的值，就是true<br>如果第一个条件是false的话，则继续判断第二个条件，并且以第二个表达式的值，作为整个表达式的值</p>
+<h4 id="条件运算符"><a href="#条件运算符" class="headerlink" title="条件运算符"></a>条件运算符</h4><p><strong>三目运算符：运算符需要三个操作</strong><br>语法：<br>表达式1？表达式2：表达式3；<br>表达式1是一个条件，值为boolean类型<br>若表达式1的值为true，则指行表达式2的操作，并且以表达式2的结果作为整个表达式的结果<br>若表达式1的值为false，则指行表达式3的操作，并且以表达式2的结果作为整个表达式的结果</p>
+<p>var age=20；<br>var msg=age&gt;18?”成年人”:”未成年人”；</p>
+<p><strong>条件运算符的嵌套</strong><br>输入一个成绩，判断<br>如果成绩在80以上，则输出优秀<br>如果成绩在60以上，则输出合格<br>否则：不合格</p>
+<p>var score=85；<br>var result=score&gt;=80?”优秀”（<br>score&gt;=60?”合格”：”不合格”）；</p>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>函数（function），也可被称为方法（method），或者过程（procedure）<br>是一段预定义好，并且可以被反复使用的代码块。其中可以包含多条可指行语句。<br>预定义好：事先声明好，但不被指行<br>反复使用：允许被多个地方（元素，函数中）所应用<br>代码块：允许包含多条可执行的代码<br>函数本质上是功能完整的对象<br><strong>语法：</strong><br>function函数名(){ 可执行语句 }<br>ex：创建一个函数 名称为：sayHello,主体功能为，向控制台上输出一句Hello World<br>    function printHello(){<br>                console.log(“hello”);<br>                console.log(“world”);<br>     }<br><strong>函数的调用</strong><br>指行函数中的内容<br>任何JS的合法位置处， 都允许调用函数<br>语法：函数名称（）<br>    function sayHello(){<br>                console.log(“hello”);<br>                console.log(“world”);<br>    }<br>    sayHello();</p>
+<p><strong>定义函数的参数和返回值</strong><br>转换参数<br>parseInt（数据）；//将指定数据转换为整数<br>parseFloat（数据）；//将指定数据转换为小数<br>console.log（”要打印的话”）；</p>
+<p><strong>定义带参数函数</strong><br>function函数名(参数列表声明){<br>    代码块(函数体，功能体，方法体）<br>}</p>
+<p>参数列表：由一个或多个 变量名称来组成声明函数时定义的参数，可以称之叫作”形参”（形式参数）</p>
+<pre><code>ex：
+   function printInfo(userName,ueserPwd)&#123;
+      console.log(&#39;用户名&#39;+userName+&#39;密码:&#39;+userPwd);
+   &#125;
+   
+   printInfo(&#39;Tom&#39;,&#39;123&#39;);
+   在调用函数时所传递的参数值，被称之为&quot;实参&quot;（实际参数）
+</code></pre>
+<p><strong>带返回值的函数</strong><br>声明：<br>    function 函数名(0或多个参数){<br>    //代码值<br>    return值；<br>    }<br>调用：<br>    var 变量=函数名（参数）；<br>    function add(num1，num2){<br>            return num1+num2;<br>    }<br>    var result=add（10，20）<br>    console.log(result);   输出三十</p>
+<h4 id="变量的作用域"><a href="#变量的作用域" class="headerlink" title="变量的作用域"></a>变量的作用域</h4><p><strong>什么是作用域</strong><br>作用域就是变量或函数的可访问范围。它控制着变量或函数的可见性和生命周期<br>在JS中，变量或函数的作用域可分为：<br>1.函数作用域，只在当前函数内访问<br>2.全局作用域，一经定义，代码的任何位置都可以访问</p>
+<p><strong>函数作用域中的变量</strong><br><strong>局部变量</strong><br>函数作用域中的变量（局部变量）只在当前函数内可访问到，离开此范围就无法访问了。<br>    function add(){<br>            var sum=1+2;            //局部<br>            console.log(sum);       //正确<br>    }<br>    console.log(sum);               //脚本错误</p>
+<p><strong>全局变量</strong><br>全局作用域中的变量，称之为”全局变量”，在代码的任何位置处都能访问<br>    var sum=0;                      //全局变量<br>    function add(){<br>            sum=1+2;<br>            console.log(sum);       //正确<br>    }<br>    console.log(sum);               //正确</p>
+<pre><code>不推荐使用如下：
+function add()&#123;
+    sum=1+2;                    //全局变量
+&#125;
+add()                           //必须调用一次
+console.log(sum);               //正确
+</code></pre>
+<p><strong>声明提前</strong><br>JS在正式执行之前，会将所有的var声明的变量和function声明的函数，预读到所在作用域的顶部。但是，对变量的赋值，还保留在原来的位置处<br>    console.log(a);//不会出错，输出undefined<br>    var a=100；<br>    console.log(a);//100;</p>
+<pre><code>var a; //仅声明提前
+console.log(a);//undefined
+a=100;//赋值仍保留在原位置
+console.log(a);//100
+</code></pre>
+<p><strong>按值传递</strong><br>传参时，实际上是将实参复制了一份副本传给了参数。在函数体内对变量进行修改，实际上是不会影响到外部的实参变量的<br>    var n=100;              //全局变量<br>    function fun(n){        //参数变量也是局部变量<br>        n-=3                //修改的局部变量n<br>        console.log(n);     //输出的局部变量n<br>    }<br>    fun(n);                 //按值传递，方法内输出97；<br>    console.log(n);         //输出全局变量的值：100</p>
+<h3 id="分支结构"><a href="#分支结构" class="headerlink" title="分支结构"></a>分支结构</h3><p>分支结构是指程序在运行过程中，根据不同条件，选择执行某些语句<br><strong>if结构：</strong><br>当条件满足时，运行某些语句。<br>当条件不满足时，则不运行这些语句。</p>
+<p><strong>语法：</strong><br>if(条件表达式){<br>}<br><strong>流程：</strong><br>1.判断条件表达式的结果。<br>2.如果结果为true，则执行语句块内容。<br>3.如果结果为false，则不执行语句块的内容。</p>
+<p><strong>注意：</strong><br>1.if语句，条件位置处，必须为boolean的值/表达式/变量，如果条件不是Boolean类型的话，JS会自动进行转换，以下情况，if都会认为时false<br>if(0/0.0/““/null/undefined/NaN){<br>}<br>除以上情况，一律为真<br>if(1){<br>  console.log(“真”)；<br>}<br>if(“我帅吗”){<br>  console.log(“真”)；<br>}<br>2.if语句块{}，可以被省略，如果省略{}，那么if只控制它下面的第一条语句。<br><strong>if-else：</strong><br>当条件满足时，运行某些语句。<br>当条件不满足时 ，运行另外一些语句。</p>
+<p><strong>语法：</strong><br>if(条件){<br>  语块1<br>}<br>else{<br>  语块2<br>}</p>
+<p><strong>else if：</strong><br>复杂if结构或多重if结构<br>如：<br>分数判断：<br>如果成绩大于90，则输出A<br>如果成绩大于80，则输出B<br>如果成绩大于60，则输出C<br>否则输出D<br><strong>语法：</strong><br>if(条件1){<br>语块1；<br>}<br>else if(条件2){<br>语块2；<br>}<br>else if(条件3){<br>语块3；<br>}…else{<br>语块n；<br>}</p>
+<p><strong>注意：</strong>最后的else模块，可以选择性添加。</p>
+<p><strong>switch-case：</strong><br>switch case语句是一种特殊的分支结构，可以根据一个表达式的不同取值，从不同程序入口开始执行。<br><strong>流程：</strong><br>1.计算变量或表达式的值<br>2.将计算出的值与case后的数值做等值判断，如果判断相等的话，则执行对应的case后的执行语句。<br>3.如果碰到break，则结束执行，否则，继续向下执行。（联合使用）<br><strong>使用场合：</strong>优先用于等值判断的条件中<br><strong>语法：</strong><br>switch(表达式){<br>    case值1:<br>    语句1；<br>    语句2；<br>    break；          //break语句作用在于跳出switch结构<br>    case值2:<br>    语句3；<br>    break；<br>    ……<br>    default:<br>    语句n；<br>    }<br><strong>switch-case结束机制：</strong><br>1.碰到break结束。<br>2.整个结构都执行完毕<br>两个case或多个case之间没有任何可执行代码，那么就以最后一块的case为主。</p>
+<p><strong>switch-case优势：</strong><br>switch-case常常和break语句结合使用实现分支的功能。</p>
+<p>switch-case在实现分支功能时和if-else主要区别在于</p>
+<p>1.if…else..可以判定相等或不等的情形适用性更广；<br>2.switch…case…结构更清晰，效率更高<br>但一般只用于指定变量相等于某个范围的某个特定的值时我们才去使用。</p>
+<p>###循环结构<br>反复一遍又一遍做着相同（相似）的事情<br>循环两大要素<br>1.循环条件：<br>什么时候开始，什么时候结束<br>2.循环操作：<br>循环体，循环过程干了什么</p>
+<h4 id="循环结构-while循环"><a href="#循环结构-while循环" class="headerlink" title="循环结构-while循环"></a><strong>循环结构-while循环</strong></h4><p><strong>语法：</strong><br>while（boolean表达式）{<br>循环体语句；<br>}<br><strong>流程：</strong><br>1.判断条件<br>2.如果条件为真，则执行循环操作<br>3.在判断条件，如果为真，继续执行循环操作<br>…<br>4.判断循环条件，通过条件为假，则退出循环结构</p>
+<p>注意：如果循环条件一直为真的话，那么循环就是死循环，尽量避免死循环的产生，要记得更新循环变量（条件）</p>
+<p><strong>while语句用于处理循环逻辑</strong><br>var i=0；<br>while（i&lt;10）{<br>console.log(‘你好世界’)；<br>i++；  //循环条件每执行一次就改变一次，使循环结束成为一种可能<br>}</p>
+<p><strong>循环的流程控制：</strong><br>continue关键字：<br>作用：用在循环中，用于终止本次循环，继续执行下次循环<br>break关键字：<br>作用：用在循环中的话，终止整个循环结构</p>
+<p>如：<br>    var i =0;<br>    while(i&lt;100){<br>        console.log(i);<br>        if(i==5){<br>                break;<br>        }<br>        i++;<br>    }<br>输出结果是：0，1，2，3，4，5。当i=5时，退出循环。</p>
+<h4 id="do-while循环"><a href="#do-while循环" class="headerlink" title="do while循环"></a><strong>do while循环</strong></h4><p><strong>语法：</strong><br>do{<br>可执行语句；<br>}while(boolean表达式)<br><strong>流程：</strong><br>1.先执行循环操作<br>2.再判断循环条件<br>如果条件为真，则继续执行循环操作<br>如果条件为假，则终止循环即退出循环<br>特点：无论条件满足于否，至少执行一次。</p>
+<h4 id="while和do-while-区别"><a href="#while和do-while-区别" class="headerlink" title="while和do while 区别"></a>while和do while 区别</h4><p>1.while<br>先判断，后执行<br>最少一次循环都不执行（第一次条件就不满足）<br>2.do while<br>先判断，后执行<br>最少要执行一次循环操作（第一次条件就不满足）</p>
+<h4 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a><strong>for循环</strong></h4><p><strong>语法：</strong><br>for(表达式1;表达式2;表达式3){<br>循环体语句;}</p>
+<p><strong>for循环执行过程：</strong><br>1.计算表达式1的值；<br>2.计算表达式2(boolean)的值，如果为true则执行循环体，否则退出循环；<br>3.执行循环体；<br>4.执行表达式3；<br>5.计算表达式2，如果为true则执行循环体，否则退出循环体<br>6.如此循环往复，直到表达式2的值为false</p>
+<p><strong>for循环用于实现固定次数的循环</strong><br>累加<br>求1+2+3+4…+100=？<br>var sum=0;<br>for(var i=1;i&lt;=100;i++){<br>sum+=i;<br>}<br>console.log(“1到100的和为：”+sum)；<br>阶乘<br>1<em>2</em>3<em>7.。。</em>10</p>
+<h4 id="for，while，do-while之间的区别"><a href="#for，while，do-while之间的区别" class="headerlink" title="for，while，do while之间的区别"></a>for，while，do while之间的区别</h4><p>1.for while<br>最少执行0次<br>while：多数用于不确定循环次数时使用<br>for：多数用于确定循环次数时使用<br>2.do while<br>最少执行1次<br>适合用于不确定循环次数时使用</p>
+<h4 id="循环的嵌套"><a href="#循环的嵌套" class="headerlink" title="循环的嵌套"></a>循环的嵌套</h4><p>在一个循环体内再出现一个循环<br>for/while/do while/三种循环在很多情况下是可以互换的；一般情况下，for循环使用最多</p>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><p><strong>什么是数组：</strong>内存中连续存储多个数据的数据结构，再起一个统一的名字。<br><strong>为什么用数组：</strong>普通的变量只能存储一个数据程序=数据结构+算法<br><strong>算法：</strong>解决问题的步骤<br><strong>数据结构：</strong>数据在内存中的存储结构，好的数据结构可以极大提高程序的执行效率<br><strong>什么时候用：</strong>只要存储多个连续的数据</p>
+<h4 id="索引数组"><a href="#索引数组" class="headerlink" title="索引数组"></a>索引数组</h4><p>下标为数字的数组<br><strong>创建：（两种）</strong><br>1.数组直接量：var arr=[] ;<br>2.用new：var arr=new Array();</p>
+<p>例子：<br>var arr1=[];<br>定义一个不包含元素的数组<br>var arr=[97,85,79];<br>定义一个包含三个元素的数组<br>var arr3=new Array();<br>定义一个不包含元素的数组<br>var arr4==new Array(“Tom”,”Mary”,”John”);<br>定义一个三个字符串元素的数组 </p>
+<p><strong>创建数组时初始化：</strong><br>1.数组直接量：var arr={元素1，元素2…};<br>2.用new：var arr=new Array(元素1，元素2…);<br>何时：在创建数组时，已经知道数组的元素内容</p>
+<p>如：<br>var array=[4500,5500,5000];<br>var array=new Array(‘市场部’,’研发部’,’运营部’)</p>
+<p><strong>创建，先声明空数组，再添加元素</strong><br>var empArray=[];<br>empArray[]=’Scott’;<br>empArray[1]=’Smith’;</p>
+<p>var mArray=new Array();<br>mArray[0]=’三国志’;<br>mArray[2]=195;<br>mArray[5]=true;<br>混合元素类型数组</p>
+<p><strong>访问数组中的元素：</strong><br><strong>元素：</strong>数组中每个数据都是一个元素<br><strong>如何访问：</strong>下标：数组中唯一标识每个元素存储位置的序号<br><strong>特点：</strong>从0开始，连续不重复<br><strong>何时：</strong>只要访问数组元素，只能用下标<br><strong>如何：</strong>数组名[i] 用法和单个变量完全一样</p>
+<p><strong>数组GET操作与SET操作</strong><br>设置数组元素的值 <strong>SET</strong><br>var scores=[95.88,100];<br>scores[2]=98;  //将值为100的元素重新赋值为98<br>scores[3]=75;  //在数组尾部添加一个新的元素<br><em>下标从0开始，最大到lenth-1</em><br>获得数组元素的值 <strong>GET</strong><br>var cities=new Array(‘南京‘,’杭州’,’青岛’)；<br>console.log(cities[1]);   //杭州<br>console.log(cities[3]);   //undefined<br>不会抛出数组下标越界异常 </p>
+<p><strong>访问数组中的元素：</strong><br>数组的lenth属性：<br>记录了数组中理论上的元素个数<br>lenth属性的值永远是最大下标+1<br>var arr4=new Array(10);<br>console.log(arr4.lenth);  //长度为10</p>
+<p>var arr5=[];  //长度为0<br>  arr5[0]=87; //长度变为1<br>  arr5[3]=98; //长度变为4</p>
+<p><strong>数组的遍历：</strong><br>遍历数组元素，通常选择for循环语句，元素的下标作循环变量<br>var nums=[50,90,20,10];<br>for(var i=0;i&lt;nums.lenth;i++){<br>   nums[i]+=10;<br>}<br>元素下标从0开始，到lenth-1结束</p>
+<p><strong>固定套路:</strong><br>1.获取数组最后一个元素：arr[arr.lenth-1]<br>2.获得倒数第n个元素的位置：arr[arr.lenth-n]<br>3.数组缩容：减小arr.lenth的数值，会删除结尾的多余元素<br>4.遍历数组：依次访问数组中每个元素，对每个元素执行相同的操作 </p>
+<p><strong>特殊：三个不限制：</strong><br>1.不限制数组的元素个数：长度可变<br>2. 不限制下标越界：<br>获取元素值：不报错！返回undefined<br>修改元素值：不报错！自动在指定位置创建新元素，并且自动修改lenth属性为最大下标+1<br>如果下标不连续的数组—-稀疏数组<br>3.不限制元素的数据类型</p>
+<h4 id="关联数组："><a href="#关联数组：" class="headerlink" title="关联数组："></a>关联数组：</h4><p><strong>什么是：</strong>可自定义下标名称的数组<br><strong>为什么：</strong>索引数组中的数字下标没有明确的意义<br><strong>何时：</strong>只要希望每个元素都有专门的名称时<br><strong>如何：</strong><br>1.创建空数组<br>2.向空数组中添加新元素，并自定义下标名称</p>
+<p><strong>关联数组的创建方式：</strong><br>var bookInfo=[];<br>bookInfo[‘bookName’]=’西游记’;<br>bookInfo[‘price’]=35.5;<br>由于关联数组的lenth属性值无法获取其中元素的数量，所以遍历关联数组只能使用for..in循环</p>
+<p><strong>遍历关联数组；for in 循环</strong><br>for(var key in hash){<br>  key  //只是元素的下标名<br>  hash[key]  //当前元素值<br>}</p>
+<h5 id="索引数组与关联数组的对比"><a href="#索引数组与关联数组的对比" class="headerlink" title="索引数组与关联数组的对比"></a>索引数组与关联数组的对比</h5><table>
+<thead>
+<tr>
+<th><strong>索引数组</strong></th>
+<th><strong>vs</strong></th>
+<th><strong>关联数组</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>以字符串输出</td>
+<td></td>
+<td>不能用字符穿输出</td>
+</tr>
+<tr>
+<td>下标是数字</td>
+<td></td>
+<td>下表是自定义的字符串</td>
+</tr>
+<tr>
+<td>lenth属性有效</td>
+<td></td>
+<td>lenth属性失效（=0）</td>
+</tr>
+<tr>
+<td></td>
+<td>访问元素，都用数组名[“下标”]</td>
+<td></td>
+</tr>
+<tr>
+<td>可用for循环遍历</td>
+<td></td>
+<td>不能用for循环遍历———for in</td>
+</tr>
+</tbody></table>
+<p>查找：</p>
+<table>
+<thead>
+<tr>
+<th>查找：</th>
+<th>索引数组</th>
+<th>hash数组</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>遍历</td>
+<td>不用遍历</td>
+</tr>
+<tr>
+<td></td>
+<td>受存储位置影响</td>
+<td>和存储位置无关</td>
+</tr>
+<tr>
+<td></td>
+<td>受数组元素个数影响</td>
+<td>和数组中元素个数无关</td>
+</tr>
+</tbody></table>
+<p><strong>总结：只要希望快速查找元素时，就用hash数组</strong></p>
+<h3 id="数组API函数"><a href="#数组API函数" class="headerlink" title="数组API函数"></a>数组API函数</h3><h4 id="数组转字符串："><a href="#数组转字符串：" class="headerlink" title="数组转字符串："></a><strong>数组转字符串：</strong></h4><p>**String(arr):**将arr中每个元素转为字符串，用逗号分隔<br><strong>固定套路：</strong>对数组拍照，用于鉴别是否数组被修改过<br>**arr.join(“连接符”):**将arr中每个元素转为字符串，用自定义的连接符分割<br>//将字符拼接为单词<br>var chars=[“H”,”e”,”l”,”l”,”o”];<br>console.log(chars.join(“”)); //输出hello<br><strong>固定套路：</strong><br>1.将字符组成单词：<br>chars.join(“”),无缝拼接<br>扩展：判断数组是空数组：arr.join(“”)==””<br>2.将单词组成句子：<br>words.join(“”)<br>3.将数组转化为页面元素的内容：<br>“&lt;开始标签&gt;”+arr.join(“&lt;/结束标签&gt;&lt;开始标签&gt;”)+”&lt;/结束标签&gt;”</p>
+<h4 id="拼接和选取"><a href="#拼接和选取" class="headerlink" title="拼接和选取"></a>拼接和选取</h4><p>不直接修改原数组，而返回新数组<br><strong>拼接：</strong><br>concat()拼接两个或更多的数组，并返回结果<br>var newArr=arr1.concat(值1,值2,arr2,值3,…)<br>将值1，值2和arr2中每个元素，以及值3都拼接到arr1的元素之后，返回新数组<br>其中：arr2的元素会被先打散，再拼接。（因为arr是数组）<br>        var arr1 = [90, 91, 92];<br>        var arr2 = [80, 81];<br>        var arr3 = [70, 71, 72, 73];<br>        var arr4 = arr1.concat(50, 60, arr2, arr3);<br>        console.log(arr1); //现有数组值不变<br>        console.log(arr4); //输出90,91,92,50,60,80,81,70,71,72,73</p>
+<p><strong>选取：</strong><br>slice()返回现有数组的一个子数组<br>var subArr=arr.slice(starti,endi+1)<br>选取arr中starti位置开始，到endi结束的所有元素组成新数组返回————原数组保持不变<br><strong>强调：</strong>凡是两个参数都是下标的函数，都有一个特性：含头不含尾<br>    var arr1=[10,20,30,40,50];<br>    var arr2=arr1.slice(1,4);       //20,30,40  (含头不含尾）<br>    var arr3=arr1.slice(2);         //30,40,50（下标为2到最后）<br>    var arr4=arr1.slice(-4,-2);     //20,30（反向选取含头不含尾）</p>
+<pre><code>console.loga(rr1);              //现有数组元素不变
+</code></pre>
+<p><strong>选取简写：</strong><br>1.如果选取到结尾：可省略第二个参数<br>2.如果选取的元素离结尾近：可用倒数下标：<br>arr.slice(length-n,arr.length-m+1)<br>可简写为：arr.slice(-n,-m+1);<br>3.复制数组：<br>arr.slice(0,arr.length);<br>可简写为：arr.slice();</p>
+<p><strong>删除：</strong><br>splice直接修改原数组<br>arr.splice(starti,n);<br>删除arr中starti位置开始的n个元素不考虑含头不含尾<br>其实：var deletes=arr.splice(starti,n)；<br>返回值deletes保存了被删除的元素组成的临时数组<br>    var arr1=[10,20,30,40,50];<br>    var arr2=arr1.splice(2,1);                  //下标为2删除1个（30）<br>    //var arr2=arr1.splice(2,2,21,22,23);       //下标为2删除2个并放21，22，23于被删的位置上<br>    //var arr2=arr1.splice(2,2,[91,92,93]);</p>
+<pre><code>console.log(arr1);
+console.log(arr2);
+</code></pre>
+<p><strong>插入：</strong><br>arr.splice(starti,0,值1,值2,…)<br>在arr中starti位置，插入新值1，值2，…原starti位置的值及其之后的值被向后瞬移。</p>
+<p><strong>替换：</strong><br>删除旧的插入新的<br>arr.splice(starti,n,值1,值2,…)<br>先删除arr中starti位置的n个值，再在starti位置插入新值<br>强调：删除的元素个数和插入的新元素个数不必一致。</p>
+<p><strong>颠倒：</strong><br>强调：仅负责原样颠倒数组，不负责排序<br>reverse()颠倒数组中元素的顺序<br>arr.reverse();<br>    var arr1=[10,20,30,40,50];<br>    arr1.reverse();</p>
+<pre><code>console.log(arr1);  //50，40，30，20，10
+</code></pre>
+<p><strong>排序：</strong><br>将元素按从小到大的顺序重新排列</p>
+<p><strong>排序API:</strong><br>arr.sort():默认将所有元素转为字符串再排列<br>问题：只能排列字符串类型的元素<br>解决：使用自定义比较器函数</p>
+<p><strong>排序算法：</strong><br>（手写）冒泡 快速 插入排序</p>
+
+      </section>
+
+      
+      
+        <nav class="article-nav">
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="/imgs/db2.png"></div>
+    
+    <div class="card-text">
+      
+        <a href="/2021/11/07/10_DOM/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">DOM</h2>
+        </a>
+      
+      <div class="card-text--row">Newer</div>
+    </div>
+  </article>
+</div>
+          
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="/imgs/db5.png"></div>
+    
+    <div class="card-text">
+      
+        <a href="/2021/11/07/08_css%E5%B8%83%E5%B1%80%E5%AE%9A%E4%BD%8D%E7%9B%B8%E5%85%B3/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">css布局定位相关</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
+          
+        </nav>
+      
+
+      <section class="page-message-container layout-padding">
+        
+
+
+  
+  
+
+  
+  
+
+
+      </section>
+    </div>
+    <div class="widget-info">
+      <section class="widget-author widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-body">
+    
+      <img src="/imgs/head.jpg" class="soft-size--round soft-style--box" alt="HUMILTY">
+    
+    
+      <h2>HUMILTY</h2>
+    
+    
+      <p>Not Rick BE Rick</p>
+    
+
+    <div class="count-box">
+      <div class="count-box--item">
+        <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
+</svg>
+        <span>21</span>
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+        2
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+        3
+      </div>
+    </div>
+  </div>
+</section>
+
+      
+
+      
+<section class="widet-notice widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-notice" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M512 945.02305225v28.15620663a24.27259221 24.27259221 0 0 1-24.27259221 24.27259335H394.0352a48.54518557 48.54518557 0 0 1-41.74885888-23.78714112l-110.68302222-184.47170332a132.04290333 132.04290333 0 0 1-17.47626667-48.54518557h118.4502511a200.97706667 200.97706667 0 0 1 76.21594113 14.56355556l20.38897777 133.49925888a48.54518557 48.54518557 0 0 0 36.40888888 27.67075555l16.01991111 2.91271112a24.27259221 24.27259221 0 0 1 20.38897778 25.72894889zM997.45185223 463.45481443a194.18074112 194.18074112 0 0 1-38.8361489 116.50844445 24.75804445 24.75804445 0 0 1-36.4088889 0l-34.95253333-34.95253333a24.27259221 24.27259221 0 0 1-2.91271111-30.58346667 97.09036999 97.09036999 0 0 0 0-106.79940665 24.27259221 24.27259221 0 0 1 2.91271111-30.58346666l34.95253333-34.95253334a24.75804445 24.75804445 0 0 1 18.93262223-7.28177777 26.2144 26.2144 0 0 1 17.47626667 9.70903665A194.18074112 194.18074112 0 0 1 997.45185223 463.45481443z m-194.18074112-388.36148111v776.72296335a48.54518557 48.54518557 0 0 1-48.54518556 48.54518443h-28.64165888a48.54518557 48.54518557 0 0 1-33.98163001-14.07810332l-145.63555556-143.20829668A291.27111111 291.27111111 0 0 0 342.57730333 657.63555556H172.18370333a145.63555556 145.63555556 0 0 1-145.63555556-145.63555556v-97.09036999a145.63555556 145.63555556 0 0 1 145.63555556-145.63555556h170.3936a291.27111111 291.27111111 0 0 0 206.31703779-85.43952668l145.63555555-143.20829554a48.54518557 48.54518557 0 0 1 33.98162888-14.07810446H754.72592555a48.54518557 48.54518557 0 0 1 48.54518556 48.54518555z" fill="currentColor"></path>
+</svg>
+    <span>NOTICE</span>
+  </div>
+  <div class="widget-body">
+    <p>To live is to risk it all</p>
+  </div>
+</section>
+
+
+      <section class="widget-categorys widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+    <span>CATEGORYS</span>
+  </div>
+  <div class="widget-body">
+    <ul class="categorys-list">
+      
+        <li class="categorys-list-item">
+          <a href="/categories/JavaScript/">
+            JavaScript (14)
+          </a>
+        </li>
+      
+        <li class="categorys-list-item">
+          <a href="/categories/%E5%89%8D%E7%AB%AF%E4%B8%89%E5%89%91%E5%AE%A2/">
+            前端三剑客 (7)
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+</section>
+
+      <section class="widget-tags widget-item  layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+    <span>TAGS</span>
+  </div>
+  <div class="widget-body">
+    <div class="tags-cloud">
+      <a href="/tags/css/" style="font-size: 15px;" class="tags-cloud-5">css</a> <a href="/tags/html/" style="font-size: 10px;" class="tags-cloud-0">html</a> <a href="/tags/js/" style="font-size: 20px;" class="tags-cloud-10">js</a>
+    </div>
+  </div>
+</section>
+    </div>
+  </article>
+</div>
+
+    <!-- footer container -->
+<footer id="footer" class="footer">
+  <div class="footer-container">
+    
+    <div class="social-icons">
+      
+        
+      
+        
+      
+        
+      
+        
+          <a href="https://github.com/Th1Humble" class="soft-size--primary soft-style--box" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-github" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M64.6 512c0 195.6 125.4 361.9 300.1 422.9 23.5 5.9 19.9-10.8 19.9-22.2v-77.6c-135.8 15.9-141.3-74-150.5-89-18.5-31.5-61.9-39.5-49-54.5 31-15.9 62.5 4 98.9 58 26.4 39.1 77.9 32.5 104.1 26 5.7-23.5 17.9-44.5 34.7-60.9-140.7-25.2-199.4-111.1-199.4-213.3 0-49.5 16.4-95.1 48.4-131.8-20.4-60.6 1.9-112.4 4.9-120.1 58.2-5.2 118.5 41.6 123.3 45.3 33.1-8.9 70.8-13.7 112.9-13.7 42.4 0 80.3 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.4-43.9 2.9 7.7 24.7 58.3 5.5 118.1 32.5 36.8 49 82.8 49 132.4 0 102.3-59 188.3-200.2 213.2 23.5 23.3 38.1 55.5 38.1 91.1v112.7c0.8 9 0 17.9 15.1 17.9C832.7 877 960.4 709.4 960.4 512.1c0-247.5-200.6-447.9-447.9-447.9C265 64.1 64.6 264.5 64.6 512z"></path>
+</svg>
+          </a>
+        
+      
+        
+      
+    </div>
+     
+    <p>&copy; 2022 <a href="/" target="_blank">HUMILTY</a></p>
+
+    
+
+    <p>Powered by <a href="https://hexo.io" target="_blank" rel="noopener noreferrer">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank" rel="noopener noreferrer author">flex-block</a></p>
+
+    <p>
+      <a href="javascript:;" id="theme-light">🌞 浅色</a>
+      <a href="javascript:;" id="theme-dark">🌛 深色</a>
+      <a href="javascript:;" id="theme-auto">🤖️ 自动</a>
+    </p>
+  </div>
+</footer>
+  </div>
+
+  <div class="back-to-top-fixed soft-size--round soft-style--box">
+    <svg class="icon icon-back-to-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <path d="M725.333333 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8l-213.333333-213.333333c-17.066667-17.066667-17.066667-42.666667 0-59.733333s42.666667-17.066667 59.733333 0l213.333333 213.333333c17.066667 17.066667 17.066667 42.666667 0 59.733333C746.666667 422.4 738.133333 426.666667 725.333333 426.666667z"></path>
+      <path d="M298.666667 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8-17.066667-17.066667-17.066667-42.666667 0-59.733333l213.333333-213.333333c17.066667-17.066667 42.666667-17.066667 59.733333 0s17.066667 42.666667 0 59.733333l-213.333333 213.333333C320 422.4 311.466667 426.666667 298.666667 426.666667z"></path>
+      <path d="M512 896c-25.6 0-42.666667-17.066667-42.666667-42.666667L469.333333 170.666667c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 682.666667C554.666667 878.933333 537.6 896 512 896z"></path>
+    </svg>
+  </div>
+
+  
+  <!-- aplayer -->
+
+
+<!-- dplayer -->
+
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+  
+  <!-- 尾部用户自定义相关内容 -->
+</body>
+</html>

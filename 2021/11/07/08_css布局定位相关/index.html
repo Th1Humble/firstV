@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#3367D6"/>
+  <link rel="apple-touch-icon" href="/icons-192.png">
+  <link rel="manifest" href="/manifest.json">
+  
+  <meta name="generator" content="Hexo 5.4.0">
+
+  
+    <meta name="description" content="WHATEVER U DO I CAN DO BETTER">
+  
+
+  
+
+  
+    <meta name="author" content="HUMILTY">
+  
+
+  
+
+  
+
+  <title>css布局定位相关 | HUMILITY</title>
+
+  
+
+  
+    <link rel="shortcut icon" href="/Rick.ico">
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.3/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/monokai.css">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+  <div class="root-container">
+    
+<!-- header container -->
+<header class="header-container post">
+  
+    <div class="post-image" style="background-image: url(/imgs/db5.png)"></div>
+  
+
+  <!-- navbar -->
+<nav class="navbar">
+  <div class="navbar-content">
+    <!-- logo -->
+    <div class="navbar-logo">
+      <a href="/">
+        
+          HUMILITY
+        
+      </a>
+    </div>
+    <!-- link -->
+    <div class="navbar-link">
+      <div class="navbar-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-list">
+        
+          <li class="navbar-list-item"><a href="/">首页</a></li>
+        
+          <li class="navbar-list-item"><a href="/about">关于</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="header-content">
+      <div class="post-text layout-block">
+        <div class="layout-margin">
+          <h1 class="title-wrap">css布局定位相关</h1>
+          <h2 class="title-sub-wrap">
+            <strong>HUMILTY</strong>
+            <span>发布于</span>
+            <time  class="article-date" datetime="2021-11-07T06:38:04.000Z" itemprop="datePublished">2021-11-07</time>
+          </h2>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/categories/%E5%89%8D%E7%AB%AF%E4%B8%89%E5%89%91%E5%AE%A2/">📒 前端三剑客</a></li>
+  
+</ul>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/tags/css/">🏷️ css</a></li>
+  
+</ul>
+        </div>
+      </div>
+    </div>
+  
+
+  
+  
+  
+</header>
+
+    <!-- 文章 -->
+
+<!-- 文章内容 -->
+<div class="body-container">
+  <article class="content-container layout-block post-container">
+    <div class="article-info">
+      
+      
+      
+      
+      <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
+        <h1 id="CSS布局与定位"><a href="#CSS布局与定位" class="headerlink" title="CSS布局与定位"></a>CSS布局与定位</h1><h3 id="overflow属性"><a href="#overflow属性" class="headerlink" title="overflow属性"></a>overflow属性</h3><p>当内容溢出盒子框，overflow属性取值<br><strong>hidden：</strong>超出部分不可见<br><strong>scroll：</strong>显示滚动条<br><strong>auto：</strong>如果有超出部分，显示滚动条</p>
+<h3 id="border属性"><a href="#border属性" class="headerlink" title="border属性"></a>border属性</h3><p>用来设置盒子边框<br>用hr标签会有很多限制，利用border属性可进行替代hr标签样式的操作<br><strong>border-width：</strong>px、thin、medium、thick<br><strong>border-style：</strong>dashed（横线）、dotted（点）、solid（实线）、double（双实线）<br><strong>border-color：</strong>颜色<br><strong>border：</strong>width style color<br>    例子：<br>    用子属性:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">   border-width：2px；</span><br><span class="line">   border-style：solid；</span><br><span class="line">   border-color：red；</span><br><span class="line">   &#125;</span><br><span class="line">统一运用border:</span><br><span class="line">div&#123;</span><br><span class="line">    border solid red;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="水平分割线"><a href="#水平分割线" class="headerlink" title="水平分割线"></a>水平分割线</h3><p>可多次使用引用使用class属性引用line即可</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.line&#123;</span><br><span class="line">      height:1px;</span><br><span class="line">      width:500px;</span><br><span class="line">      border-top:1px solid #e5e5e5；</span><br><span class="line">      &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="padding-margin-属性"><a href="#padding-margin-属性" class="headerlink" title="padding margin 属性"></a>padding margin 属性</h3><p>对浏览器默认设置清零</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">*&#123;</span><br><span class="line">  margin:0;</span><br><span class="line">  padding:0:</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>取值：px、%（外层盒子的宽度和高度）</p>
+<table>
+<thead>
+<tr>
+<th>内边距</th>
+<th>外边距</th>
+<th>组成</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>padding：5px；</td>
+<td>margin：5px；</td>
+<td>上右下左</td>
+</tr>
+<tr>
+<td>padding-top：10%；</td>
+<td>margin-top：10%；</td>
+<td>上</td>
+</tr>
+<tr>
+<td>padding-left</td>
+<td>margin-left</td>
+<td>左</td>
+</tr>
+<tr>
+<td>padding-right</td>
+<td>margin-right</td>
+<td>右</td>
+</tr>
+<tr>
+<td>padding-bottom</td>
+<td>margin-bottom</td>
+<td>下</td>
+</tr>
+</tbody></table>
+<h3 id="margin"><a href="#margin" class="headerlink" title="margin"></a>margin</h3><p>margin：1px；<br>以margin为例，padding，border三个属性都分为四个方向<br>设置方式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">margin：1px；   （意味四个方向都是1px）</span><br><span class="line">margin：1px 2px 1px 3px；  （按照上右下左顺时针）</span><br><span class="line">margin：1px 2px；   （top与bottom为1px，left与right为2px）</span><br><span class="line">margin：1px 2px 3px   （省略left，与right相等2px）</span><br></pre></td></tr></table></figure>
+<p><strong>注意：</strong><br>margin的合并：垂直方向合并（如两个盒子垂直方向外边距合并按照高度更高显示，水平方向不合并</p>
+<h3 id="水平居中"><a href="#水平居中" class="headerlink" title="水平居中"></a>水平居中</h3><p>对于图片文字水平居中：<code>text-align：center；</code><br>div水平区域：<code>margin：0 auto；</code>（第一个上下的值 auto为左右值 会按照宽度自动解析）</p>
+<h2 id="css定位机制概述"><a href="#css定位机制概述" class="headerlink" title="css定位机制概述"></a>css定位机制概述</h2><p>概述：<br>通过对盒子的位置定位<br>分类：<br>文档流 浮动定位 层定位<br><strong>文档流flow</strong><br>为默认情况，从上到下从左到右，有的元素单独一行<br><strong>浮动float</strong><br>对于上下排列需左右排列，对大盒子拆分若干列<br><strong>层定位layer</strong><br>同图层一样前后叠加一起如需设置position属性<br>##文档流定位<br><strong>元素分类：</strong>block、inline、inline-block<br><strong>元素类型转换：</strong>display属性<br><strong>相互转换：</strong></p>
+<ul>
+<li>display：none  元素不会被显示</li>
+<li>display：block  显示为block元素</li>
+<li>display：inline  显示为inline元素</li>
+<li>display：inline-block  显示为inline-block元素<h3 id="block"><a href="#block" class="headerlink" title="block"></a>block</h3></li>
+<li><em>block元素特点</em>*</li>
+<li>独占一行</li>
+<li>元素的height、width、margin、padding都可设置</li>
+<li><em>常见的block元素</em>*<br><code>&lt;div&gt;、&lt;p&gt;、&lt;h1&gt;...&lt;h6&gt;、&lt;ol&gt;、&lt;ul&gt;、&lt;table&gt;、&lt;form&gt;</code></li>
+<li><em>将元素显示为block元素</em>*<br>例如a元素<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a&#123;</span><br><span class="line">   display:block;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<code>inline元素a转换为block元素从而使a元素具有块状元素特点</code><h3 id="inline"><a href="#inline" class="headerlink" title="inline"></a>inline</h3></li>
+<li><em>inline元素特点</em>*</li>
+<li>不单独占用一行</li>
+<li>width、height不可设置</li>
+<li>width就是它包含的文字或图片的宽度，不可改变</li>
+<li><em>常见的inline元素</em>*<br><code>&lt;span&gt;、&lt; a &gt;（超链接）</code></li>
+<li><em>将元素显示为inline元素</em>*<br><code>display:inline;</code></li>
+<li><em>inline元素之间有一个间距问题</em>*<br>比如两个超链接元素在网页展视出来两个超链接之间有间隙<br>两个inline元素水平排列默认的间隙<br>解决方式：通常将inline转完block等其他方式显示<h3 id="inline-block"><a href="#inline-block" class="headerlink" title="inline-block"></a>inline-block</h3>就是同时具备inline元素、block元素的特点</li>
+<li>不单独占用一行</li>
+<li>元素的height、width、margin、padding都可以设置</li>
+<li><em>常见的inline-block元素</em>*<br><code>&lt;img&gt;</code></li>
+<li><em>将元素显示为inline-block元素</em>*<br><code>display:inline-block;</code></li>
+</ul>
+<h2 id="浮动定位"><a href="#浮动定位" class="headerlink" title="浮动定位"></a>浮动定位</h2><ul>
+<li>float属性：left、right</li>
+<li>clear属性：left、right、both</li>
+</ul>
+<h3 id="loat属性"><a href="#loat属性" class="headerlink" title="loat属性"></a>loat属性</h3><p>right：右浮动<br>left：左浮动<br>none：不浮动</p>
+<p><strong>float用处特点</strong></p>
+<ul>
+<li>图文混排时，希望图片位于文字左右侧时需要浮动定位设置</li>
+<li>常用，多列布局时盒子左右浮动时需设置</li>
+<li>水平排列</li>
+<li>浮动后原位置被占用</li>
+<li>宽度不够时浮动</li>
+</ul>
+<h3 id="clear属性"><a href="#clear属性" class="headerlink" title="clear属性"></a>clear属性</h3><p>both —— 清除左右两边的浮动<br>right —— 清除右侧方向<br>left —— 清除左侧浮动<br>none —— 默认值，只在需要移除已指定的清除值时用到</p>
+<p><strong>单方向清除浮动的用法</strong><br>设置clear：right 并不是指把浮动元素去掉，而是右侧不会有浮动元素，所以另起一行成为右边的样式<br><strong>双侧清除浮动的用法</strong><br>将footer单独占据一行显示为如图所示<br>设置clear：both 是指左右两侧没有浮动元素 从而达到单独一行的效果</p>
+<h2 id="层定位"><a href="#层定位" class="headerlink" title="层定位"></a>层定位</h2><p>如同图像软件中的图层一样可以对每个layer能够精确定位操作<br>希望网页的元素可以层叠在另外一个元素上 运用层定位<br>相对于哪一层来定位运用<br><strong>position属性</strong><br>fixed relative absolute<br><strong>位置的设定</strong><br>left属性<br>right属性<br>top属性<br>bottom属性<br><strong>前后叠加顺序</strong><br>z-index属性（值大的在上面）<br>###position属性（相对于谁定位）<br><strong>static：默认值</strong><br>没有定位，元素出现在正常的流中<br>top，bottom，left，right，z-index <strong>无效</strong><br><strong>fixed：固定定位</strong><br>相对于浏览器窗口进行定位<br>top，bottom，left，right，z-index <strong>有效</strong><br><strong>relative：相对定位</strong><br>相对于其直接父元素进行定位<br>top，bottom，left，right，z-index <strong>有效</strong><br><strong>absolute：绝对定位</strong><br>相对于static定位以外的第一个父元素进行定位<br>top，bottom，left，right，z-index <strong>有效</strong></p>
+<h4 id="固定定位position：fix"><a href="#固定定位position：fix" class="headerlink" title="固定定位position：fix"></a>固定定位position：fix</h4><p>不会随浏览器窗口的滚动条滚动而变化<br>总在视线里的元素</p>
+<h4 id="相对定位position：relative"><a href="#相对定位position：relative" class="headerlink" title="相对定位position：relative"></a>相对定位position：relative</h4><p>定位为relative的元素脱离正常的文档流中，但其在文档流的原位置依然存在<br>relative定位的层总是相对于其直接父元素，无论其父元素是什么定位方式</p>
+<h4 id="绝对定位position：absolute"><a href="#绝对定位position：absolute" class="headerlink" title="绝对定位position：absolute"></a>绝对定位position：absolute</h4><p>定位为absolute的层脱离正常文本流，但与relative的区别：其在正常流中的原位置不再存在<br>对于absolute定位的层总是相对于其最近的定义为absolute或relative的父层，而这个父层并不一定是其直接父层<br>对于absolute定位的层，如果其父层都为定义absolute或relative，则其将相对body进行定位</p>
+
+      </section>
+
+      
+      
+        <nav class="article-nav">
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="/imgs/db1.jpg"></div>
+    
+    <div class="card-text">
+      
+        <a href="/2021/11/07/13_javascript/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">javascript</h2>
+        </a>
+      
+      <div class="card-text--row">Newer</div>
+    </div>
+  </article>
+</div>
+          
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="/imgs/db3.jpg"></div>
+    
+    <div class="card-text">
+      
+        <a href="/2021/11/07/07_css3/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">css3</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
+          
+        </nav>
+      
+
+      <section class="page-message-container layout-padding">
+        
+
+
+  
+  
+
+  
+  
+
+
+      </section>
+    </div>
+    <div class="widget-info">
+      <section class="widget-author widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-body">
+    
+      <img src="/imgs/head.jpg" class="soft-size--round soft-style--box" alt="HUMILTY">
+    
+    
+      <h2>HUMILTY</h2>
+    
+    
+      <p>Not Rick BE Rick</p>
+    
+
+    <div class="count-box">
+      <div class="count-box--item">
+        <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
+</svg>
+        <span>21</span>
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+        2
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+        3
+      </div>
+    </div>
+  </div>
+</section>
+
+      
+
+      
+<section class="widet-notice widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-notice" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M512 945.02305225v28.15620663a24.27259221 24.27259221 0 0 1-24.27259221 24.27259335H394.0352a48.54518557 48.54518557 0 0 1-41.74885888-23.78714112l-110.68302222-184.47170332a132.04290333 132.04290333 0 0 1-17.47626667-48.54518557h118.4502511a200.97706667 200.97706667 0 0 1 76.21594113 14.56355556l20.38897777 133.49925888a48.54518557 48.54518557 0 0 0 36.40888888 27.67075555l16.01991111 2.91271112a24.27259221 24.27259221 0 0 1 20.38897778 25.72894889zM997.45185223 463.45481443a194.18074112 194.18074112 0 0 1-38.8361489 116.50844445 24.75804445 24.75804445 0 0 1-36.4088889 0l-34.95253333-34.95253333a24.27259221 24.27259221 0 0 1-2.91271111-30.58346667 97.09036999 97.09036999 0 0 0 0-106.79940665 24.27259221 24.27259221 0 0 1 2.91271111-30.58346666l34.95253333-34.95253334a24.75804445 24.75804445 0 0 1 18.93262223-7.28177777 26.2144 26.2144 0 0 1 17.47626667 9.70903665A194.18074112 194.18074112 0 0 1 997.45185223 463.45481443z m-194.18074112-388.36148111v776.72296335a48.54518557 48.54518557 0 0 1-48.54518556 48.54518443h-28.64165888a48.54518557 48.54518557 0 0 1-33.98163001-14.07810332l-145.63555556-143.20829668A291.27111111 291.27111111 0 0 0 342.57730333 657.63555556H172.18370333a145.63555556 145.63555556 0 0 1-145.63555556-145.63555556v-97.09036999a145.63555556 145.63555556 0 0 1 145.63555556-145.63555556h170.3936a291.27111111 291.27111111 0 0 0 206.31703779-85.43952668l145.63555555-143.20829554a48.54518557 48.54518557 0 0 1 33.98162888-14.07810446H754.72592555a48.54518557 48.54518557 0 0 1 48.54518556 48.54518555z" fill="currentColor"></path>
+</svg>
+    <span>NOTICE</span>
+  </div>
+  <div class="widget-body">
+    <p>To live is to risk it all</p>
+  </div>
+</section>
+
+
+      <section class="widget-categorys widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+    <span>CATEGORYS</span>
+  </div>
+  <div class="widget-body">
+    <ul class="categorys-list">
+      
+        <li class="categorys-list-item">
+          <a href="/categories/JavaScript/">
+            JavaScript (14)
+          </a>
+        </li>
+      
+        <li class="categorys-list-item">
+          <a href="/categories/%E5%89%8D%E7%AB%AF%E4%B8%89%E5%89%91%E5%AE%A2/">
+            前端三剑客 (7)
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+</section>
+
+      <section class="widget-tags widget-item  layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+    <span>TAGS</span>
+  </div>
+  <div class="widget-body">
+    <div class="tags-cloud">
+      <a href="/tags/css/" style="font-size: 15px;" class="tags-cloud-5">css</a> <a href="/tags/html/" style="font-size: 10px;" class="tags-cloud-0">html</a> <a href="/tags/js/" style="font-size: 20px;" class="tags-cloud-10">js</a>
+    </div>
+  </div>
+</section>
+    </div>
+  </article>
+</div>
+
+    <!-- footer container -->
+<footer id="footer" class="footer">
+  <div class="footer-container">
+    
+    <div class="social-icons">
+      
+        
+      
+        
+      
+        
+      
+        
+          <a href="https://github.com/Th1Humble" class="soft-size--primary soft-style--box" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-github" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M64.6 512c0 195.6 125.4 361.9 300.1 422.9 23.5 5.9 19.9-10.8 19.9-22.2v-77.6c-135.8 15.9-141.3-74-150.5-89-18.5-31.5-61.9-39.5-49-54.5 31-15.9 62.5 4 98.9 58 26.4 39.1 77.9 32.5 104.1 26 5.7-23.5 17.9-44.5 34.7-60.9-140.7-25.2-199.4-111.1-199.4-213.3 0-49.5 16.4-95.1 48.4-131.8-20.4-60.6 1.9-112.4 4.9-120.1 58.2-5.2 118.5 41.6 123.3 45.3 33.1-8.9 70.8-13.7 112.9-13.7 42.4 0 80.3 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.4-43.9 2.9 7.7 24.7 58.3 5.5 118.1 32.5 36.8 49 82.8 49 132.4 0 102.3-59 188.3-200.2 213.2 23.5 23.3 38.1 55.5 38.1 91.1v112.7c0.8 9 0 17.9 15.1 17.9C832.7 877 960.4 709.4 960.4 512.1c0-247.5-200.6-447.9-447.9-447.9C265 64.1 64.6 264.5 64.6 512z"></path>
+</svg>
+          </a>
+        
+      
+        
+      
+    </div>
+     
+    <p>&copy; 2022 <a href="/" target="_blank">HUMILTY</a></p>
+
+    
+
+    <p>Powered by <a href="https://hexo.io" target="_blank" rel="noopener noreferrer">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank" rel="noopener noreferrer author">flex-block</a></p>
+
+    <p>
+      <a href="javascript:;" id="theme-light">🌞 浅色</a>
+      <a href="javascript:;" id="theme-dark">🌛 深色</a>
+      <a href="javascript:;" id="theme-auto">🤖️ 自动</a>
+    </p>
+  </div>
+</footer>
+  </div>
+
+  <div class="back-to-top-fixed soft-size--round soft-style--box">
+    <svg class="icon icon-back-to-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <path d="M725.333333 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8l-213.333333-213.333333c-17.066667-17.066667-17.066667-42.666667 0-59.733333s42.666667-17.066667 59.733333 0l213.333333 213.333333c17.066667 17.066667 17.066667 42.666667 0 59.733333C746.666667 422.4 738.133333 426.666667 725.333333 426.666667z"></path>
+      <path d="M298.666667 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8-17.066667-17.066667-17.066667-42.666667 0-59.733333l213.333333-213.333333c17.066667-17.066667 42.666667-17.066667 59.733333 0s17.066667 42.666667 0 59.733333l-213.333333 213.333333C320 422.4 311.466667 426.666667 298.666667 426.666667z"></path>
+      <path d="M512 896c-25.6 0-42.666667-17.066667-42.666667-42.666667L469.333333 170.666667c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 682.666667C554.666667 878.933333 537.6 896 512 896z"></path>
+    </svg>
+  </div>
+
+  
+  <!-- aplayer -->
+
+
+<!-- dplayer -->
+
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+  
+  <!-- 尾部用户自定义相关内容 -->
+</body>
+</html>

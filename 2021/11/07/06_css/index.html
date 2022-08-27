@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#3367D6"/>
+  <link rel="apple-touch-icon" href="/icons-192.png">
+  <link rel="manifest" href="/manifest.json">
+  
+  <meta name="generator" content="Hexo 5.4.0">
+
+  
+    <meta name="description" content="WHATEVER U DO I CAN DO BETTER">
+  
+
+  
+
+  
+    <meta name="author" content="HUMILTY">
+  
+
+  
+
+  
+
+  <title>css | HUMILITY</title>
+
+  
+
+  
+    <link rel="shortcut icon" href="/Rick.ico">
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.3/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/monokai.css">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+  <div class="root-container">
+    
+<!-- header container -->
+<header class="header-container post">
+  
+    <div class="post-image" style="background-image: url(/imgs/hzw1.png)"></div>
+  
+
+  <!-- navbar -->
+<nav class="navbar">
+  <div class="navbar-content">
+    <!-- logo -->
+    <div class="navbar-logo">
+      <a href="/">
+        
+          HUMILITY
+        
+      </a>
+    </div>
+    <!-- link -->
+    <div class="navbar-link">
+      <div class="navbar-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-list">
+        
+          <li class="navbar-list-item"><a href="/">首页</a></li>
+        
+          <li class="navbar-list-item"><a href="/about">关于</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="header-content">
+      <div class="post-text layout-block">
+        <div class="layout-margin">
+          <h1 class="title-wrap">css</h1>
+          <h2 class="title-sub-wrap">
+            <strong>HUMILTY</strong>
+            <span>发布于</span>
+            <time  class="article-date" datetime="2021-11-07T06:11:58.000Z" itemprop="datePublished">2021-11-07</time>
+          </h2>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/categories/%E5%89%8D%E7%AB%AF%E4%B8%89%E5%89%91%E5%AE%A2/">📒 前端三剑客</a></li>
+  
+</ul>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/tags/css/">🏷️ css</a></li>
+  
+</ul>
+        </div>
+      </div>
+    </div>
+  
+
+  
+  
+  
+</header>
+
+    <!-- 文章 -->
+
+<!-- 文章内容 -->
+<div class="body-container">
+  <article class="content-container layout-block post-container">
+    <div class="article-info">
+      
+      
+      
+      
+      <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
+        <h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><h2 id="CSS语法"><a href="#CSS语法" class="headerlink" title="CSS语法"></a>CSS语法</h2><p>CSS:Cascading Style Sheets<br>网页内容的样式</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//例子</span><br><span class="line">   &lt;body&gt;</span><br><span class="line">       &lt;p&gt;段落内容&lt;/p&gt;</span><br><span class="line">       &lt;p&gt;段落内容&lt;/p&gt;</span><br><span class="line">       &lt;p&gt;段落内容&lt;/p&gt;</span><br><span class="line">       &lt;p&gt;段落内容&lt;/p&gt;</span><br><span class="line">   &lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<p>如需要改变字体颜色<br>需要先给样式起名字 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">选择器</span><br><span class="line">p&#123;font-size:12px;     /*字号*/</span><br><span class="line">   color:blue;      /*文字颜色*/</span><br><span class="line">   font-weight:bold;  /*加粗*/</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<p>注意：<br>1.最后一条声明可以没有分号，但是为了以后修改方便，一般也加上分号。<br>2.为了使样式更加容易阅读，可以将每条代码写在一个新行内。</p>
+<h2 id="CSS添加方法"><a href="#CSS添加方法" class="headerlink" title="CSS添加方法"></a>CSS添加方法</h2><p>行内样式：直接用style属性写在某一个标签内 只针对当前这个标签这一行起作用<br>内嵌样式：用style标签写在head标签内 对当前页面起作用<br>单独文件：用link标签指向外部的一个单独样式表仍然在head标签内 文件以.css结尾</p>
+<h3 id="行内添加法"><a href="#行内添加法" class="headerlink" title="行内添加法"></a>行内添加法</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">  &lt;!DOCTYPE html&gt;     </span><br><span class="line">&lt;html&gt;        </span><br><span class="line">&lt;head&gt;      </span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;p style=&quot;color:red;&quot;&gt;</span><br><span class="line">     内容</span><br><span class="line">    &lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="内嵌样式"><a href="#内嵌样式" class="headerlink" title="内嵌样式"></a>内嵌样式</h3><p>将css代码内嵌到当前页面的head标签部分<br>在head标签内加入style标签对内</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;&lt;/style&gt;</span><br><span class="line">    &lt;!DOCTYPE html&gt;     </span><br><span class="line">	 &lt;html&gt;        </span><br><span class="line">	 &lt;head&gt;      </span><br><span class="line">     &lt;style type=&quot;text/css&quot;&gt;    表示当前样式是以CSS文本规定的</span><br><span class="line">       p&#123;</span><br><span class="line">          color:red;    /*设置字体颜色*/</span><br><span class="line">       &#125;</span><br><span class="line">     &lt;/style&gt;</span><br><span class="line">	 &lt;/head&gt;</span><br><span class="line">	 &lt;body&gt;</span><br><span class="line">	   &lt;p&gt;</span><br><span class="line">       内容</span><br><span class="line">      &lt;/p&gt;</span><br><span class="line">	 &lt;/body&gt;</span><br><span class="line">	 &lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>注意<br>即使有公共CSS代码 也是每个页面都要定义的<br>适合文件很少 CSS代码也不多的情况<br>如果一个网站有很多页面 每个文件都会变大 后期维护难度也大</p>
+<h3 id="单独文件"><a href="#单独文件" class="headerlink" title="单独文件"></a>单独文件</h3><p>使用单独样式表文件添加样式 后缀以.css结尾 且有单独文件夹<br>与内嵌样式语法结构相同<br>例子 两个需要相同样式的网页<br>    外部式样式表文件style.css</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">  p&#123;</span><br><span class="line">   color:red; /*设置文字颜色*/</span><br><span class="line">   &#125;</span><br><span class="line">   网页文件：1.htm</span><br><span class="line">  &lt;!DOCTYPE html&gt;     </span><br><span class="line">&lt;html&gt;        </span><br><span class="line">&lt;head&gt;      </span><br><span class="line">     &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot; /&gt;   rel属性：要链接到什么类型的文件 </span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;p&gt;</span><br><span class="line">     内容</span><br><span class="line">    &lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line">        网页文件：2.htm</span><br><span class="line">  &lt;!DOCTYPE html&gt;     </span><br><span class="line">&lt;html&gt;        </span><br><span class="line">&lt;head&gt;      </span><br><span class="line">     &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot; /&gt;   //rel属性：要链接到什么类型的文件 </span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;p&gt;</span><br><span class="line">     内容</span><br><span class="line">    &lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>单独文件添加方式优点</p>
+<ul>
+<li>页面结构html代码与样式css代码完全分离</li>
+<li>维护方便</li>
+<li>如果需要改变网站风格，只需要修改公共css文件</li>
+<li>可以在同一个html文档内引用多个外部式样表<h3 id="CSS添加方法–优先级"><a href="#CSS添加方法–优先级" class="headerlink" title="CSS添加方法–优先级"></a>CSS添加方法–优先级</h3></li>
+<li>多重样式可层叠，可以覆盖</li>
+<li>样式的优先级按照“就近原则”</li>
+<li>行内样式&gt;内嵌样式&gt;链接样式&gt;浏览器默认样式</li>
+</ul>
+<pre><code>外部样式表文件
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">h3&#123;</span><br><span class="line">color：red；</span><br><span class="line">text-align：left；</span><br><span class="line">font-size：8pt</span><br><span class="line">&#125;</span><br><span class="line">内嵌样式</span><br><span class="line">h3&#123;</span><br><span class="line">text-align:right;</span><br><span class="line">font-size:20pt;</span><br><span class="line">&#125;</span><br><span class="line">按照优先级，h3最终会显示</span><br><span class="line">color：red；</span><br><span class="line">text-align：right；</span><br><span class="line">font-size：20pt</span><br></pre></td></tr></table></figure>
+<h2 id="CSS选择器"><a href="#CSS选择器" class="headerlink" title="CSS选择器"></a>CSS选择器</h2><h3 id="标签选择器"><a href="#标签选择器" class="headerlink" title="标签选择器"></a>标签选择器</h3><pre><code>css部分
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">    body&#123;background-color:#cc;</span><br><span class="line">    text-align:center;</span><br><span class="line">    font-size:12px;&#125;</span><br><span class="line">    h1&#123;font:&quot;黑体“；font-size：：20px；&#125;</span><br><span class="line">    hr&#123;width：200px：&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<pre><code>html部分
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">     &lt;h1&gt;标题&lt;/h1&gt;</span><br><span class="line">     &lt;hr&gt;</span><br><span class="line">     &lt;p&gt;正文的段落&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="类别选择器"><a href="#类别选择器" class="headerlink" title="类别选择器"></a>类别选择器</h3><p>分类样式 分类别<br>.开头<br>    css部分</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">    p  &#123;font-size：12px&#125;</span><br><span class="line">    .one&#123;font-size:18px&#125;      //类别选择器.开头名称自行</span><br><span class="line">    .two&#123;font-size:24px&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<pre><code>html部分
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;p class=&quot;one&quot;&gt;类别一&lt;/p&gt;    //样式的引用于对应标签内采用class属性此时 不需要.</span><br><span class="line">    &lt;p class=&quot;one&quot;&gt;类别一&lt;/p&gt;</span><br><span class="line">    &lt;p class=&quot;two&quot;&gt;类别二&lt;/p&gt;</span><br><span class="line">    &lt;p class=&quot;two&quot;&gt;类别二&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;普通段落中的文字&lt;/p&gt;     //没有采用类别选择器将采用标签选择器的样式</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="ID选择器"><a href="#ID选择器" class="headerlink" title="ID选择器"></a>ID选择器</h3><pre><code>css部分
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">    #one&#123;font-size:12px&#125;    //#开头定义样式名称可自行选择</span><br><span class="line">    #two&#123;font-size:24px&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">html部分</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;p id=&quot;one&quot;&gt;文字&lt;/p&gt;    引用id选择器使用标签的id属性  去掉#直接写样式的名字就行</span><br><span class="line">    &lt;p id=&quot;two&quot;&gt;文字&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="类别选择器和ID选择器的区别"><a href="#类别选择器和ID选择器的区别" class="headerlink" title="类别选择器和ID选择器的区别"></a>类别选择器和ID选择器的区别</h3><ul>
+<li>id定义的样式有一个唯一性</li>
+<li>定义出来的样式要在html唯一用一次</li>
+<li>类别类型的样式可以多次被引用多次 作用于多个网页元素上面<h3 id="择器的嵌套声明"><a href="#择器的嵌套声明" class="headerlink" title="择器的嵌套声明"></a>择器的嵌套声明</h3>将某一部分采取单独的样式<br>特殊规定的用span标签<br>  css部分<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&gt;</span><br><span class="line">     p span&#123;              p标签内的span标签 仅有span标签内的有对应的样式 其他就不会出现</span><br><span class="line">          color:red;</span><br><span class="line">          &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+  html部分<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;p&gt;&lt;span&gt;特殊定义的&lt;/span&gt;&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="选择器的集体声明"><a href="#选择器的集体声明" class="headerlink" title="选择器的集体声明"></a>选择器的集体声明</h3>  css部分<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">   &lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">   h1,p&#123; text-align:center;    选择器部分：作用于h1，p标签都采用该样式的设置方式</span><br><span class="line">   &#125;</span><br><span class="line">   &lt;/style&gt;</span><br><span class="line">html部分</span><br><span class="line">   &lt;body&gt;</span><br><span class="line">    &lt;h1&gt;内容&lt;/h1&gt;</span><br><span class="line">    &lt;p&gt;内容&lt;/p&gt;</span><br><span class="line">   &lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="样式的全局声明"><a href="#样式的全局声明" class="headerlink" title="样式的全局声明"></a>样式的全局声明</h3>  css部分<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line"> *&#123;                    无论什么样的标签元素 都声明是该样式  用*作为名字 针对所有的内容</span><br><span class="line">  text-align:center;</span><br><span class="line">  &#125;</span><br><span class="line"> &lt;/style&gt;</span><br></pre></td></tr></table></figure>
+  html部分<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">     &lt;h1&gt;内容&lt;/h1&gt;</span><br><span class="line">     &lt;p&gt;内容&lt;/P&gt;</span><br><span class="line">     &lt;h2&gt;内容&lt;/h2&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="样式的混合"><a href="#样式的混合" class="headerlink" title="样式的混合"></a>样式的混合</h3></li>
+<li>多个class选择器混用，用空格分开</li>
+<li>如有 one yellow left 三种类别的样式混用<br>  <code>&lt;div class=&quot;one yellow left&quot;&gt;此区域内使用该样式&lt;div&gt;</code></li>
+<li><em>id和class混用</em>*<br><code>&lt;div id=&quot;my&quot; class=&quot;one yellow left&quot;&gt;</code><br><code>id选择器不可以多个同时使用</code><h2 id="CSS样式（1）"><a href="#CSS样式（1）" class="headerlink" title="CSS样式（1）"></a>CSS样式（1）</h2><h3 id="单位与颜色"><a href="#单位与颜色" class="headerlink" title="单位与颜色"></a>单位与颜色</h3></li>
+<li><em>单位</em>*<br>px：像素<br>em：1em——1个字符 2em——2个字符<br>自动适应用户所使用的字体<br>%：百分之（相对于默认值）</li>
+<li><em>颜色</em>*</li>
+<li><em>red，blue，green：</em>*<br>颜色名</li>
+<li><em>rgb(x,x,x):</em>*<br>RGB值:每个颜色分值取值0-255<br>红色：rgb(255,0,0)<br>灰色：rgb(66,66,66)<br>白色：rgb（255,255,255)</li>
+<li><em>rgb(x%,x%,x%):</em>*<br>RGB百分比值：0%-100%<br>红色：rgb(100%,0%,0%)</li>
+<li><em>rgba(x,x,x,x):</em>*<br>RGB值，透明度<br>a值：0.0(完全透明)与1.0(完全不透明)<br>红色半透明：rgba(255,0,0,0.5)</li>
+<li><em>#rrggbb</em>*<br>十六进制数(0-9,a-f)<br>红色：#ff0000<br>红色：#f00 去掉重复位<br>###文本</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>取值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>color</td>
+<td>文本颜色</td>
+<td>red：#f00, rgb(255,0,0)</td>
+</tr>
+<tr>
+<td>letter-spacing</td>
+<td>字符间距</td>
+<td>2px, -3px</td>
+</tr>
+<tr>
+<td>line-height</td>
+<td>行高</td>
+<td>14px, 1.5em, 120%</td>
+</tr>
+<tr>
+<td>text-align</td>
+<td>对齐</td>
+<td>center, left, right, justify（两端对齐）</td>
+</tr>
+<tr>
+<td>text-decoration</td>
+<td>装饰线</td>
+<td>none, overline, underline, line-through</td>
+</tr>
+<tr>
+<td>text-indent</td>
+<td>首行缩进</td>
+<td>2em</td>
+</tr>
+</tbody></table>
+<h3 id="字符间距letter-spacing"><a href="#字符间距letter-spacing" class="headerlink" title="字符间距letter-spacing"></a>字符间距letter-spacing</h3><pre><code>css部分
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">h1&#123;letter-spacing:2px&#125;</span><br><span class="line">h2&#123;letter-spacing:-3px&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<pre><code>html部分
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">&lt;h1&gt;内容&lt;/h1&gt;</span><br><span class="line">&lt;h2&gt;内容&lt;/h2&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="行高line-height"><a href="#行高line-height" class="headerlink" title="行高line-height"></a>行高line-height</h3><pre><code>css部分
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">p&#123;font-size:14px;</span><br><span class="line">  line-height:2em;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<pre><code>html部分
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">&lt;p&gt;内容</span><br><span class="line">&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<p><code>当height属性和light-height属性设置相同数值时垂直居中</code></p>
+<h3 id="对齐方式text-align"><a href="#对齐方式text-align" class="headerlink" title="对齐方式text-align"></a>对齐方式text-align</h3><pre><code>css部分
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">h1&#123;text-align:center&#125;</span><br><span class="line">.date&#123;text-align:right&#125;</span><br><span class="line">.main&#123;text-align:justify&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<pre><code>html部分
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">&lt;h1&gt;此部分内容引用css样式居中对齐&lt;/h1&gt;</span><br><span class="line">&lt;p class=&quot;date&quot;&gt;此部分内容引用css样式右对齐&lt;/p&gt;</span><br><span class="line">&lt;p class=&quot;main&quot;&gt;此部分内容引用css样式两端对齐&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="装饰线text-decoration"><a href="#装饰线text-decoration" class="headerlink" title="装饰线text-decoration"></a>装饰线text-decoration</h3><pre><code>css部分
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">h1&#123;text-decoration:overline&#125;</span><br><span class="line">h2&#123;text-decoration:line-through&#125;</span><br><span class="line">h3&#123;text-decrotion:underline&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<pre><code>html部分
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;h1&gt;此部分内容引用css代码在文字上方有装饰线&lt;/h1&gt;</span><br><span class="line">  &lt;h2&gt;此部分内容引用css代码在文字中间有删除线&lt;/h2&gt;</span><br><span class="line">  &lt;h3&gt;此部分内容引用css代码在文字下方有下划线&lt;/h3&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<p><code>当装饰线设置为none时，如果用a标签引用的超链接将会去掉超链接下划线</code></p>
+<h3 id="字体font"><a href="#字体font" class="headerlink" title="字体font"></a>字体font</h3><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>font</td>
+<td>在一个声明中设置所有的字体属性</td>
+<td>font：bold 18px ‘幼圆’</td>
+</tr>
+<tr>
+<td>font-family</td>
+<td>字体系列</td>
+<td>font-family:”HiraginoSans GB”,”Microsoft YaHei”,sans-serif;（依次定义多个字体逗号隔开，依次寻找使用。双引号引用是带有空格的字体，否则就不加）</td>
+</tr>
+<tr>
+<td>font-size</td>
+<td>字号</td>
+<td>14px 120%</td>
+</tr>
+<tr>
+<td>font-style</td>
+<td>斜体</td>
+<td>italic</td>
+</tr>
+<tr>
+<td>font-weight</td>
+<td>粗体</td>
+<td>bold</td>
+</tr>
+</tbody></table>
+<h3 id="CSS文字——简化font"><a href="#CSS文字——简化font" class="headerlink" title="CSS文字——简化font"></a>CSS文字——简化font</h3><p>font简化使用方法<br>font：斜体 粗体 字号/行高 字体<br>font：italic bold 16px/1.5em ‘宋体’ </p>
+<h2 id="CSS样式（2）"><a href="#CSS样式（2）" class="headerlink" title="CSS样式（2）"></a>CSS样式（2）</h2><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>背景属性 空元素需要先定义元素的高度和宽度<br><code>background-color:</code><br><code>background-image:</code><br><code>url(&quot;logo.jpg&quot;)</code><br><strong>background-repeat：</strong><br>repeat：（填充满整个页面 棋盘格填充）<br>repeat-x：（只填充横向的一行）<br>repeat-y：（只填充纵向的一列）<br>no-repeat：（只显示一次）<br><strong>background：</strong>方式<br>颜色 图片 repeat<br>    例子 有1px*30px纵向背景 命名为bg1.jpg<br>    要把它横向填充某文字下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">    height:30px;</span><br><span class="line">    width:600px;</span><br><span class="line">    background:url(&quot;images/bg1.jpg&quot;)repeat-x</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><p>链接的四种状态<br>a:link - 普通的、未被访问的链接<br>a:visited -用户已访问的链接<br>a:hover - 鼠标指针位于链接的上方悬停<br>a:active - 链接被点击的时刻<br>这种以a：开头的超链接选择器的类型称为伪类选择器<br>如果设置在任何状态下超链接的样式直接去设置a标签作为样式名字<br><strong>按照以下顺序</strong><br>a:hover 必须位于a:linke和a:visited之后<br>a:active 必须位于a:hover之后<br>love&amp;hate<br>L(link)ov(visited)e&amp;H(hover)ate<br>    例子：四种状态下<br>    CSS部分</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">a:link&#123;</span><br><span class="line">    text-decoration:none;</span><br><span class="line">    color:#09f;/*未访问*/</span><br><span class="line"> &#125;（没有被单机过，超链接无下划线装饰且浅蓝）</span><br><span class="line">a:visited&#123;</span><br><span class="line">    text-decoration:none;</span><br><span class="line">    color:#930;/*已访问*/</span><br><span class="line"> &#125;（被访问过，超链接无下划线且红色）</span><br><span class="line"> a:hover&#123;</span><br><span class="line">     text-decoration:underline;</span><br><span class="line">     color:#03c;/*鼠标悬停*/</span><br><span class="line"> &#125;（鼠标悬停，超链接有下划线且深蓝色）</span><br><span class="line"> a:active&#123;</span><br><span class="line">     text-decoration:none;</span><br><span class="line">     color:#03c;/*按下鼠标*/</span><br><span class="line"> &#125;（激活的超链接，无下划线且深蓝色）</span><br></pre></td></tr></table></figure>
+<h3 id="鼠标悬停放大字体"><a href="#鼠标悬停放大字体" class="headerlink" title="鼠标悬停放大字体"></a>鼠标悬停放大字体</h3><pre><code>css部分
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a&#123;</span><br><span class="line">    font-size:22px;</span><br><span class="line"> &#125;</span><br><span class="line">a:hover&#123;</span><br><span class="line">    font-size:120%;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<pre><code>html部分
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;#&quot;&gt;此部分内容鼠标悬停放大120%&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="CSS样式（3）列表与表格"><a href="#CSS样式（3）列表与表格" class="headerlink" title="CSS样式（3）列表与表格"></a>CSS样式（3）列表与表格</h2><p><strong>列表</strong><br>list-style<br>list-style-images<br>list-style-position<br>list-style-type<br><strong>表格</strong><br>border<br>width<br>height<br>border-collapse</p>
+<h3 id="无序列表ul有序列表ol共用样式"><a href="#无序列表ul有序列表ol共用样式" class="headerlink" title="无序列表ul有序列表ol共用样式"></a>无序列表ul有序列表ol共用样式</h3><p><strong>list-style</strong><br>所有用于列表的属性，设置于一个声明中<br><strong>list-style-images</strong><br>为列表标志设置图像<br><strong>list-style-position</strong><br>标志的位置<br><strong>list-style-tpye</strong><br>标志的类型</p>
+<h4 id="list-style-type"><a href="#list-style-type" class="headerlink" title="list-style-type"></a>list-style-type</h4><table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>none</td>
+<td>无标记</td>
+</tr>
+<tr>
+<td>disc</td>
+<td>默认。标记是实心圆。</td>
+</tr>
+<tr>
+<td>circle</td>
+<td>标记是空心圆</td>
+</tr>
+<tr>
+<td>square</td>
+<td>标记是实心方块</td>
+</tr>
+<tr>
+<td>decimal</td>
+<td>标记是数字</td>
+</tr>
+<tr>
+<td>lower-roman</td>
+<td>小写罗马数字(i,ii,iii,iv,v,等)</td>
+</tr>
+<tr>
+<td>upper-roman</td>
+<td>大写罗马数字(I,II,III,IV,V,等)</td>
+</tr>
+<tr>
+<td>lower-alpha</td>
+<td>小写英文字母(a,b,c,d,e,等)</td>
+</tr>
+<tr>
+<td>upper-alpha</td>
+<td>大写英文字母(A,B,C,D,E,等)</td>
+</tr>
+<tr>
+<td>lower-Greek</td>
+<td>小写希腊字母(alpha,beta,gamma)</td>
+</tr>
+<tr>
+<td>lower-latin</td>
+<td>小写拉丁字母(a,b,c,d,e,等)</td>
+</tr>
+<tr>
+<td>upper-latin</td>
+<td>大写拉丁字母(A,B,C,D,E,等)</td>
+</tr>
+</tbody></table>
+<h4 id="list-style-position"><a href="#list-style-position" class="headerlink" title="list-style-position"></a>list-style-position</h4><pre><code>css部分
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;style tpye=&quot;text/css&quot;&gt;</span><br><span class="line">.inside&#123;</span><br><span class="line">   list-style-position:inside</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.outside&#123;</span><br><span class="line">   list-style-position:outside</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<pre><code>html部分
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul class=&quot;inside&quot;&gt;</span><br><span class="line"> &lt;li&gt;此处填写内容&lt;/li&gt;</span><br><span class="line"> &lt;li&gt;此处填写内容&lt;/li&gt;</span><br><span class="line"> &lt;li&gt;此处填写内容&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">inside这个无序列表向右缩进到列表区域内</span><br><span class="line">&lt;ul class=&quot;outside&quot;&gt;</span><br><span class="line"> &lt;li&gt;此处填写内容&lt;/li&gt;</span><br><span class="line"> &lt;li&gt;此处填写内容&lt;/li&gt;</span><br><span class="line"> &lt;li&gt;此处填写内容&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">outside这个无序列表突出在列表左侧</span><br></pre></td></tr></table></figure>
+<h4 id="list-style-image"><a href="#list-style-image" class="headerlink" title="list-style-image"></a>list-style-image</h4><p>列表项目标号可以用图片（1.gif）表示,0设置image子属性路径<br>list-style-image：url(“images/1.jpg”)</p>
+<h3 id="css表格"><a href="#css表格" class="headerlink" title="css表格"></a>css表格</h3><h4 id="表格大小"><a href="#表格大小" class="headerlink" title="表格大小"></a>表格大小</h4><p>属性：宽width，高height</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">table&#123;</span><br><span class="line">   width：500px；</span><br><span class="line">   height：200px；</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h4 id="表格边框"><a href="#表格边框" class="headerlink" title="表格边框"></a>表格边框</h4><p>属性：border</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">table,td,th&#123;</span><br><span class="line">border:1px solid #eee;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>属性：border-collapse（叠加，坍缩）用来合并默认的表格样式</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">table&#123;</span><br><span class="line">border-collapse：collapse；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="奇偶选择器-：nth-child-odd-even"><a href="#奇偶选择器-：nth-child-odd-even" class="headerlink" title="奇偶选择器 ：nth-child(odd|even)"></a>奇偶选择器 ：nth-child(odd|even)</h4><p>表格呈现数据隔行显示不同的颜色 odd奇数个元素even偶数个元素<br>有时需用th标签单独设置以用来展示美观的表格样式</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tr:nth-child(odd)&#123;</span><br><span class="line">   background-color:#EAF2D3;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+      </section>
+
+      
+      
+        <nav class="article-nav">
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="/imgs/db3.jpg"></div>
+    
+    <div class="card-text">
+      
+        <a href="/2021/11/07/07_css3/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">css3</h2>
+        </a>
+      
+      <div class="card-text--row">Newer</div>
+    </div>
+  </article>
+</div>
+          
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="/imgs/hzw1.jpg"></div>
+    
+    <div class="card-text">
+      
+        <a href="/2021/11/07/11_html/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">html</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
+          
+        </nav>
+      
+
+      <section class="page-message-container layout-padding">
+        
+
+
+  
+  
+
+  
+  
+
+
+      </section>
+    </div>
+    <div class="widget-info">
+      <section class="widget-author widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-body">
+    
+      <img src="/imgs/head.jpg" class="soft-size--round soft-style--box" alt="HUMILTY">
+    
+    
+      <h2>HUMILTY</h2>
+    
+    
+      <p>Not Rick BE Rick</p>
+    
+
+    <div class="count-box">
+      <div class="count-box--item">
+        <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
+</svg>
+        <span>21</span>
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+        2
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+        3
+      </div>
+    </div>
+  </div>
+</section>
+
+      
+
+      
+<section class="widet-notice widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-notice" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M512 945.02305225v28.15620663a24.27259221 24.27259221 0 0 1-24.27259221 24.27259335H394.0352a48.54518557 48.54518557 0 0 1-41.74885888-23.78714112l-110.68302222-184.47170332a132.04290333 132.04290333 0 0 1-17.47626667-48.54518557h118.4502511a200.97706667 200.97706667 0 0 1 76.21594113 14.56355556l20.38897777 133.49925888a48.54518557 48.54518557 0 0 0 36.40888888 27.67075555l16.01991111 2.91271112a24.27259221 24.27259221 0 0 1 20.38897778 25.72894889zM997.45185223 463.45481443a194.18074112 194.18074112 0 0 1-38.8361489 116.50844445 24.75804445 24.75804445 0 0 1-36.4088889 0l-34.95253333-34.95253333a24.27259221 24.27259221 0 0 1-2.91271111-30.58346667 97.09036999 97.09036999 0 0 0 0-106.79940665 24.27259221 24.27259221 0 0 1 2.91271111-30.58346666l34.95253333-34.95253334a24.75804445 24.75804445 0 0 1 18.93262223-7.28177777 26.2144 26.2144 0 0 1 17.47626667 9.70903665A194.18074112 194.18074112 0 0 1 997.45185223 463.45481443z m-194.18074112-388.36148111v776.72296335a48.54518557 48.54518557 0 0 1-48.54518556 48.54518443h-28.64165888a48.54518557 48.54518557 0 0 1-33.98163001-14.07810332l-145.63555556-143.20829668A291.27111111 291.27111111 0 0 0 342.57730333 657.63555556H172.18370333a145.63555556 145.63555556 0 0 1-145.63555556-145.63555556v-97.09036999a145.63555556 145.63555556 0 0 1 145.63555556-145.63555556h170.3936a291.27111111 291.27111111 0 0 0 206.31703779-85.43952668l145.63555555-143.20829554a48.54518557 48.54518557 0 0 1 33.98162888-14.07810446H754.72592555a48.54518557 48.54518557 0 0 1 48.54518556 48.54518555z" fill="currentColor"></path>
+</svg>
+    <span>NOTICE</span>
+  </div>
+  <div class="widget-body">
+    <p>To live is to risk it all</p>
+  </div>
+</section>
+
+
+      <section class="widget-categorys widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+    <span>CATEGORYS</span>
+  </div>
+  <div class="widget-body">
+    <ul class="categorys-list">
+      
+        <li class="categorys-list-item">
+          <a href="/categories/JavaScript/">
+            JavaScript (14)
+          </a>
+        </li>
+      
+        <li class="categorys-list-item">
+          <a href="/categories/%E5%89%8D%E7%AB%AF%E4%B8%89%E5%89%91%E5%AE%A2/">
+            前端三剑客 (7)
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+</section>
+
+      <section class="widget-tags widget-item  layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+    <span>TAGS</span>
+  </div>
+  <div class="widget-body">
+    <div class="tags-cloud">
+      <a href="/tags/css/" style="font-size: 15px;" class="tags-cloud-5">css</a> <a href="/tags/html/" style="font-size: 10px;" class="tags-cloud-0">html</a> <a href="/tags/js/" style="font-size: 20px;" class="tags-cloud-10">js</a>
+    </div>
+  </div>
+</section>
+    </div>
+  </article>
+</div>
+
+    <!-- footer container -->
+<footer id="footer" class="footer">
+  <div class="footer-container">
+    
+    <div class="social-icons">
+      
+        
+      
+        
+      
+        
+      
+        
+          <a href="https://github.com/Th1Humble" class="soft-size--primary soft-style--box" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-github" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M64.6 512c0 195.6 125.4 361.9 300.1 422.9 23.5 5.9 19.9-10.8 19.9-22.2v-77.6c-135.8 15.9-141.3-74-150.5-89-18.5-31.5-61.9-39.5-49-54.5 31-15.9 62.5 4 98.9 58 26.4 39.1 77.9 32.5 104.1 26 5.7-23.5 17.9-44.5 34.7-60.9-140.7-25.2-199.4-111.1-199.4-213.3 0-49.5 16.4-95.1 48.4-131.8-20.4-60.6 1.9-112.4 4.9-120.1 58.2-5.2 118.5 41.6 123.3 45.3 33.1-8.9 70.8-13.7 112.9-13.7 42.4 0 80.3 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.4-43.9 2.9 7.7 24.7 58.3 5.5 118.1 32.5 36.8 49 82.8 49 132.4 0 102.3-59 188.3-200.2 213.2 23.5 23.3 38.1 55.5 38.1 91.1v112.7c0.8 9 0 17.9 15.1 17.9C832.7 877 960.4 709.4 960.4 512.1c0-247.5-200.6-447.9-447.9-447.9C265 64.1 64.6 264.5 64.6 512z"></path>
+</svg>
+          </a>
+        
+      
+        
+      
+    </div>
+     
+    <p>&copy; 2022 <a href="/" target="_blank">HUMILTY</a></p>
+
+    
+
+    <p>Powered by <a href="https://hexo.io" target="_blank" rel="noopener noreferrer">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank" rel="noopener noreferrer author">flex-block</a></p>
+
+    <p>
+      <a href="javascript:;" id="theme-light">🌞 浅色</a>
+      <a href="javascript:;" id="theme-dark">🌛 深色</a>
+      <a href="javascript:;" id="theme-auto">🤖️ 自动</a>
+    </p>
+  </div>
+</footer>
+  </div>
+
+  <div class="back-to-top-fixed soft-size--round soft-style--box">
+    <svg class="icon icon-back-to-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <path d="M725.333333 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8l-213.333333-213.333333c-17.066667-17.066667-17.066667-42.666667 0-59.733333s42.666667-17.066667 59.733333 0l213.333333 213.333333c17.066667 17.066667 17.066667 42.666667 0 59.733333C746.666667 422.4 738.133333 426.666667 725.333333 426.666667z"></path>
+      <path d="M298.666667 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8-17.066667-17.066667-17.066667-42.666667 0-59.733333l213.333333-213.333333c17.066667-17.066667 42.666667-17.066667 59.733333 0s17.066667 42.666667 0 59.733333l-213.333333 213.333333C320 422.4 311.466667 426.666667 298.666667 426.666667z"></path>
+      <path d="M512 896c-25.6 0-42.666667-17.066667-42.666667-42.666667L469.333333 170.666667c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 682.666667C554.666667 878.933333 537.6 896 512 896z"></path>
+    </svg>
+  </div>
+
+  
+  <!-- aplayer -->
+
+
+<!-- dplayer -->
+
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+  
+  <!-- 尾部用户自定义相关内容 -->
+</body>
+</html>

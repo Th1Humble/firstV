@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#3367D6"/>
+  <link rel="apple-touch-icon" href="/icons-192.png">
+  <link rel="manifest" href="/manifest.json">
+  
+  <meta name="generator" content="Hexo 5.4.0">
+
+  
+    <meta name="description" content="WHATEVER U DO I CAN DO BETTER">
+  
+
+  
+
+  
+    <meta name="author" content="HUMILTY">
+  
+
+  
+
+  
+
+  <title>DOM | HUMILITY</title>
+
+  
+
+  
+    <link rel="shortcut icon" href="/Rick.ico">
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.3/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/monokai.css">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+  <div class="root-container">
+    
+<!-- header container -->
+<header class="header-container post">
+  
+    <div class="post-image" style="background-image: url(/imgs/db2.png)"></div>
+  
+
+  <!-- navbar -->
+<nav class="navbar">
+  <div class="navbar-content">
+    <!-- logo -->
+    <div class="navbar-logo">
+      <a href="/">
+        
+          HUMILITY
+        
+      </a>
+    </div>
+    <!-- link -->
+    <div class="navbar-link">
+      <div class="navbar-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-list">
+        
+          <li class="navbar-list-item"><a href="/">首页</a></li>
+        
+          <li class="navbar-list-item"><a href="/about">关于</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="header-content">
+      <div class="post-text layout-block">
+        <div class="layout-margin">
+          <h1 class="title-wrap">DOM</h1>
+          <h2 class="title-sub-wrap">
+            <strong>HUMILTY</strong>
+            <span>发布于</span>
+            <time  class="article-date" datetime="2021-11-07T07:15:53.000Z" itemprop="datePublished">2021-11-07</time>
+          </h2>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/categories/%E5%89%8D%E7%AB%AF%E4%B8%89%E5%89%91%E5%AE%A2/">📒 前端三剑客</a></li>
+  
+</ul>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/tags/js/">🏷️ js</a></li>
+  
+</ul>
+        </div>
+      </div>
+    </div>
+  
+
+  
+  
+  
+</header>
+
+    <!-- 文章 -->
+
+<!-- 文章内容 -->
+<div class="body-container">
+  <article class="content-container layout-block post-container">
+    <div class="article-info">
+      
+      
+      
+      
+      <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
+        <h2 id="DOM基础"><a href="#DOM基础" class="headerlink" title="DOM基础"></a>DOM基础</h2><h3 id="DOM查找"><a href="#DOM查找" class="headerlink" title="DOM查找"></a>DOM查找</h3><p>document object model<br>DOM是W3C(万维网联盟）的标准，是中立于平台和语言的接口，它允许程序和脚本动态地访问和更新文档的内容，结构和样式。</p>
+<p>对网页进行增删改查的操作。</p>
+<h3 id="DOM标准"><a href="#DOM标准" class="headerlink" title="DOM标准"></a>DOM标准</h3><p>开发：先用简单的，再用复杂的补充————以实现效果为目的<br>| 核心DOM | HTML DOM |<br>| — | — |<br>| 可操作一切结构化文档的API | 专门操作HTML文档的简化版DOM API |<br>| 包括HTML和XML | 仅对常用的复杂的API进行了简化 |<br>| 万能 | 不是万能 |<br>| 繁琐 | 简单 |</p>
+<p><strong>常用DOM操作</strong><br>查找节点<br>读取节点信息<br>修改节点信息<br>创建新节点<br>删除节点</p>
+<p><strong>常用DOM方法</strong><br><code>getElementById()</code><br><code>getElementsByTagName()</code><br><code>getElementsByClassName()</code><br><code>appendChild()</code><br><code>removeChild()</code><br><code>replaceChild()</code><br><code>inserBefore()</code><br><code>creatAttribute()</code><br><code>creatElement()</code><br><code>creatTextNode()</code><br><code>getAttribute()</code><br><code>setAttribute()</code></p>
+<h4 id="按id属性，精确查找一个元素对象"><a href="#按id属性，精确查找一个元素对象" class="headerlink" title="按id属性，精确查找一个元素对象"></a>按id属性，精确查找一个元素对象</h4><p><strong>var elem=document.getElementById(“id”)</strong><br>效率非常高<br><strong>强调：</strong>getElementById只能用在document上<br><strong>何时：</strong>只用于精确查找一个元素<br><strong>问题：</strong>不是所有元素都有id</p>
+<pre><code><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">例子：</span><br><span class="line">&lt;ul id=&quot;myList&quot;&gt;</span><br><span class="line">        &lt;li id=&quot;m1&quot;&gt;首页&lt;/li&gt;</span><br><span class="line">        &lt;li id=&quot;m2&quot;&gt;企业介绍&lt;/li&gt;</span><br><span class="line">        &lt;li id=&quot;m3&quot;&gt;联系我们&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;        </span><br><span class="line">var ul=document.getElementById(&#x27;myList&#x27;);</span><br><span class="line">console.log(ul);</span><br></pre></td></tr></table></figure>
+</code></pre>
+<h4 id="按标签名找"><a href="#按标签名找" class="headerlink" title="按标签名找"></a>按标签名找</h4><p><strong>var elems=parent.getElementByTagName(“tag”)</strong><br>查找指定parent节点下所有标签为tag的子代节点<br><strong>强调：</strong></p>
+<ol>
+<li>可用在任意父元素上</li>
+<li>不仅查直接子节点，而且查所有子代节点</li>
+<li>返回一个动态集合<br>即使只招待一个元素，也返回集合<br>必须用[0]，取出唯一元素</li>
+</ol>
+<p><strong>问题：</strong>不但找直接，而且找所有子代。</p>
+<pre><code><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">例子：</span><br><span class="line">&lt;ul id=&quot;myList&quot;&gt;</span><br><span class="line">        &lt;li id=&quot;m1&quot;&gt;首页&lt;/li&gt;</span><br><span class="line">        &lt;li id=&quot;m2&quot;&gt;企业介绍&lt;/li&gt;</span><br><span class="line">        &lt;li id=&quot;m3&quot;&gt;联系我们&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;        </span><br><span class="line">var ul=document.getElementById(&#x27;menuList&#x27;);</span><br><span class="line">var list=ul.getElementByTagName(&#x27;li&#x27;);</span><br><span class="line">console.log(list);</span><br></pre></td></tr></table></figure>
+</code></pre>
+<h4 id="通过name属性查找"><a href="#通过name属性查找" class="headerlink" title="通过name属性查找"></a>通过name属性查找</h4><p><strong>document.getElementByName(‘name属性值’)</strong><br>可以返回DOM树中具有指定name属性值的所有子元素集合。</p>
+<pre><code>    例子：
+    &lt;form id=&quot;registerForm&quot;&gt;
+            &lt;input type=&quot;checkbox&quot;name=&quot;boy&quot;/&gt;
+            &lt;input type=&quot;checkbox&quot;name=&quot;boy&quot;/&gt;
+            &lt;input type=&quot;checkbox&quot;name=&quot;boy&quot;/&gt;
+    &lt;/form&gt;
+    
+    var list=document.getElementByName(&#39;boy&#39;);
+    console.log(typeof list);
+</code></pre>
+<h4 id="通过class查找"><a href="#通过class查找" class="headerlink" title="通过class查找"></a>通过class查找</h4><p>查找父元素下指定class属性的元素<br><strong>var elems=parent.getElementByClassName(“class”)</strong><br>有兼容性问题：IE9+</p>
+<pre><code>例子：
+&lt;div id=&quot;news&quot;&gt;
+    &lt;p class=&quot;mainTitle&quot;&gt;新闻标题1&lt;/p&gt;
+    &lt;p class=&quot;subTitle&quot;&gt;新闻标题2&lt;/p&gt;
+    &lt;p class=&quot;mainTitle&quot;&gt;新闻标题3&lt;/p&gt;
+&lt;/div&gt;
+
+var div=document.getElementById(&#39;news&#39;);
+var list=div.getElementByClassName(&#39;mainTitle&#39;);
+console.log(list);
+</code></pre>
+<h4 id="通过css选择器查找"><a href="#通过css选择器查找" class="headerlink" title="通过css选择器查找"></a>通过css选择器查找</h4><p>元素选择器<br>类选择器<br>id选择器<br>后代选择器<br>子代选择器<br>群组选择器</p>
+<p><strong>只找一个元素：</strong><br><strong>var elem=parent.querySelector(“selector”)</strong><br><strong>强调：</strong><br>selector支持一切css中选择器<br>如果选择器匹配的有多个，只返回第一个</p>
+<p><strong>找多个元素：</strong><br><strong>var elem=parent.querySelectorAll(“selector”)</strong><br><strong>强调：</strong><br>selector API返回的是非动态集合</p>
+<h3 id="DOM修改"><a href="#DOM修改" class="headerlink" title="DOM修改"></a>DOM修改</h3><h4 id="修改属性核心DOM-四个操作"><a href="#修改属性核心DOM-四个操作" class="headerlink" title="修改属性核心DOM:四个操作"></a>修改属性核心DOM:四个操作</h4><p><strong>读取属性值：2种</strong></p>
+<ol>
+<li>先获取属性节点对象，再获得节点对象的值<br>var attrNode=elem.attributes[下标/属性名]<br>var attrNode=elem.getAttributeNode(属性名）</li>
+</ol>
+<p>attrNode.value————属性值</p>
+<ol start="2">
+<li>直接获得属性值<br>var value=elem.getAttribute(“属性名”);</li>
+</ol>
+<p><strong>修改属性值</strong><br>elem.setAttribute(“属性名”,value);</p>
+<pre><code>var h1=document.getElementById(&quot;a1&quot;);
+h1.setAttributeNode(&quot;name&quot;,zzx);
+//获取到名字修改内容
+</code></pre>
+<p><strong>判断是否包含之中的属性：</strong><br>    <code>var bool=elem.hasAttribute(&quot;属性名&quot;)</code>    //ture或false<br>    或<br>    <code>document.getElementById(&#39;bt1&#39;).hasAttribute(&#39;onclick&#39;)</code>;  //获取id为bt1的元素判断有无onclick属性</p>
+<p><strong>移除属性：</strong></p>
+<p><code>elem.removeAttribute(&#39;属性名&#39;)     &lt;a id=&quot;alink&quot;class=&quot;slink&quot;href=&quot;javascript:void(0)&quot;onclick=&quot;jump()&quot;&gt;百度搜索&lt;/a&gt;     var a=document.getElementById(&#39;alink&#39;);     a.removeAttribute(&#39;class&#39;);</code></p>
+<p><strong>修改样式</strong><br>内联样式：elem.style.属性名<br>强调：属性名：去横线，变驼峰<br>比如：<br>css：<br>background-color<br>变为<br>backgroundColor</p>
+<p>list-style-type<br>变为<br>listStyleType</p>
+<h3 id="DOM添加"><a href="#DOM添加" class="headerlink" title="DOM添加"></a>DOM添加</h3><p><strong>添加元素的步骤：</strong><br>1.创建空元素<br>2.设置关键属性<br>3.将元素添加到DOM树</p>
+<h4 id="创建空元素"><a href="#创建空元素" class="headerlink" title="创建空元素"></a>创建空元素</h4><p>var elem=document.creatElement(“元素名”）<br>如：<br>var table=document.creatElement(‘table’);<br>var tr=document.creatElement(‘tr’);<br>var td=document.creatElement(‘td’);<br>var td=document.creatElement(‘td’);</p>
+<p>console.log(table);</p>
+<h4 id="设置关键属性"><a href="#设置关键属性" class="headerlink" title="设置关键属性"></a>设置关键属性</h4><p>关键属性<br>a.innerHTML=”go to tmooc”<br>a.href=”<a target="_blank" rel="noopener" href="http://tmooc&quot;/">http://tmooc&quot;</a>;<br><a target="_blank" rel="noopener" href="http://tmooc.cn">go to mooc</a>;<br>关键样式<br>a.style.opacity=”1”;<br>a.style.cssText=”width:100px;height:100px”;  //可写多个属性</p>
+<h4 id="将元素添加到DOM树"><a href="#将元素添加到DOM树" class="headerlink" title="将元素添加到DOM树"></a>将元素添加到DOM树</h4><p><strong>parentNode.appendChild(childNode)</strong><br>可用于将一个父元素追加最后一个子节点<br>    var div = document.creatElement(‘div’);<br>    var txt = document.creatTextNode(‘版权声明’);</p>
+<pre><code>div.appendChild(txt);  //将txt放在div里
+document.body.appendChild(div);  //将div放在body里面
+</code></pre>
+<p><strong>parentNode.insertBefore(newChild,existingChild)</strong><br>用于在父元素中指定子节点之前添加一个新得子节点<br>    <ul id="menu"><br>        <li>首页</li><br>        <li>联系我们</li><br>    </ul></p>
+<pre><code>var ul=document.getElementById(&#39;Menu&#39;);
+var newLi=document.creatElement(&#39;li&#39;);
+
+ul.insertBefore(newLi,ul.lastChild);
+</code></pre>
+<h4 id="添加元素优化"><a href="#添加元素优化" class="headerlink" title="添加元素优化"></a>添加元素优化</h4><p>尽量少的操作DOM树<br>为什么：每次修改DOM树，都导致重新layout<br>1.如果同时创建父元素和子元素时，建议在内存中先将子元素添加到父元素，再将父元素一次性挂到页面<br>2.如果只添加多个平级子元素时，就要将所有子元素，临时添加到文档片段中，再将文档片段整体添加到页面<br><strong>文档片段：</strong>内存中，临时保存多个平级子元素的虚拟父元素，用法和普通父元素完全一样<br>如何：<br>1.创建片段：<br>var frag=document.creatDocumentFragment();<br>2.将子元素临时追加到frag中<br>frag.appendChild(child);<br>3.将frag追加到页面<br>parent.appendChild(frag);<br>强调：append之后，frag自动释放，不会占用元素</p>
+
+      </section>
+
+      
+      
+        <nav class="article-nav">
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="/imgs/db.png"></div>
+    
+    <div class="card-text">
+      
+        <a href="/2021/11/13/05BOM%E5%9F%BA%E7%A1%80/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">BOM基础</h2>
+        </a>
+      
+      <div class="card-text--row">Newer</div>
+    </div>
+  </article>
+</div>
+          
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="/imgs/db1.jpg"></div>
+    
+    <div class="card-text">
+      
+        <a href="/2021/11/07/13_javascript/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">javascript</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
+          
+        </nav>
+      
+
+      <section class="page-message-container layout-padding">
+        
+
+
+  
+  
+
+  
+  
+
+
+      </section>
+    </div>
+    <div class="widget-info">
+      <section class="widget-author widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-body">
+    
+      <img src="/imgs/head.jpg" class="soft-size--round soft-style--box" alt="HUMILTY">
+    
+    
+      <h2>HUMILTY</h2>
+    
+    
+      <p>Not Rick BE Rick</p>
+    
+
+    <div class="count-box">
+      <div class="count-box--item">
+        <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
+</svg>
+        <span>21</span>
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+        2
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+        3
+      </div>
+    </div>
+  </div>
+</section>
+
+      
+
+      
+<section class="widet-notice widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-notice" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M512 945.02305225v28.15620663a24.27259221 24.27259221 0 0 1-24.27259221 24.27259335H394.0352a48.54518557 48.54518557 0 0 1-41.74885888-23.78714112l-110.68302222-184.47170332a132.04290333 132.04290333 0 0 1-17.47626667-48.54518557h118.4502511a200.97706667 200.97706667 0 0 1 76.21594113 14.56355556l20.38897777 133.49925888a48.54518557 48.54518557 0 0 0 36.40888888 27.67075555l16.01991111 2.91271112a24.27259221 24.27259221 0 0 1 20.38897778 25.72894889zM997.45185223 463.45481443a194.18074112 194.18074112 0 0 1-38.8361489 116.50844445 24.75804445 24.75804445 0 0 1-36.4088889 0l-34.95253333-34.95253333a24.27259221 24.27259221 0 0 1-2.91271111-30.58346667 97.09036999 97.09036999 0 0 0 0-106.79940665 24.27259221 24.27259221 0 0 1 2.91271111-30.58346666l34.95253333-34.95253334a24.75804445 24.75804445 0 0 1 18.93262223-7.28177777 26.2144 26.2144 0 0 1 17.47626667 9.70903665A194.18074112 194.18074112 0 0 1 997.45185223 463.45481443z m-194.18074112-388.36148111v776.72296335a48.54518557 48.54518557 0 0 1-48.54518556 48.54518443h-28.64165888a48.54518557 48.54518557 0 0 1-33.98163001-14.07810332l-145.63555556-143.20829668A291.27111111 291.27111111 0 0 0 342.57730333 657.63555556H172.18370333a145.63555556 145.63555556 0 0 1-145.63555556-145.63555556v-97.09036999a145.63555556 145.63555556 0 0 1 145.63555556-145.63555556h170.3936a291.27111111 291.27111111 0 0 0 206.31703779-85.43952668l145.63555555-143.20829554a48.54518557 48.54518557 0 0 1 33.98162888-14.07810446H754.72592555a48.54518557 48.54518557 0 0 1 48.54518556 48.54518555z" fill="currentColor"></path>
+</svg>
+    <span>NOTICE</span>
+  </div>
+  <div class="widget-body">
+    <p>To live is to risk it all</p>
+  </div>
+</section>
+
+
+      <section class="widget-categorys widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+    <span>CATEGORYS</span>
+  </div>
+  <div class="widget-body">
+    <ul class="categorys-list">
+      
+        <li class="categorys-list-item">
+          <a href="/categories/JavaScript/">
+            JavaScript (14)
+          </a>
+        </li>
+      
+        <li class="categorys-list-item">
+          <a href="/categories/%E5%89%8D%E7%AB%AF%E4%B8%89%E5%89%91%E5%AE%A2/">
+            前端三剑客 (7)
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+</section>
+
+      <section class="widget-tags widget-item  layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+    <span>TAGS</span>
+  </div>
+  <div class="widget-body">
+    <div class="tags-cloud">
+      <a href="/tags/css/" style="font-size: 15px;" class="tags-cloud-5">css</a> <a href="/tags/html/" style="font-size: 10px;" class="tags-cloud-0">html</a> <a href="/tags/js/" style="font-size: 20px;" class="tags-cloud-10">js</a>
+    </div>
+  </div>
+</section>
+    </div>
+  </article>
+</div>
+
+    <!-- footer container -->
+<footer id="footer" class="footer">
+  <div class="footer-container">
+    
+    <div class="social-icons">
+      
+        
+      
+        
+      
+        
+      
+        
+          <a href="https://github.com/Th1Humble" class="soft-size--primary soft-style--box" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-github" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M64.6 512c0 195.6 125.4 361.9 300.1 422.9 23.5 5.9 19.9-10.8 19.9-22.2v-77.6c-135.8 15.9-141.3-74-150.5-89-18.5-31.5-61.9-39.5-49-54.5 31-15.9 62.5 4 98.9 58 26.4 39.1 77.9 32.5 104.1 26 5.7-23.5 17.9-44.5 34.7-60.9-140.7-25.2-199.4-111.1-199.4-213.3 0-49.5 16.4-95.1 48.4-131.8-20.4-60.6 1.9-112.4 4.9-120.1 58.2-5.2 118.5 41.6 123.3 45.3 33.1-8.9 70.8-13.7 112.9-13.7 42.4 0 80.3 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.4-43.9 2.9 7.7 24.7 58.3 5.5 118.1 32.5 36.8 49 82.8 49 132.4 0 102.3-59 188.3-200.2 213.2 23.5 23.3 38.1 55.5 38.1 91.1v112.7c0.8 9 0 17.9 15.1 17.9C832.7 877 960.4 709.4 960.4 512.1c0-247.5-200.6-447.9-447.9-447.9C265 64.1 64.6 264.5 64.6 512z"></path>
+</svg>
+          </a>
+        
+      
+        
+      
+    </div>
+     
+    <p>&copy; 2022 <a href="/" target="_blank">HUMILTY</a></p>
+
+    
+
+    <p>Powered by <a href="https://hexo.io" target="_blank" rel="noopener noreferrer">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank" rel="noopener noreferrer author">flex-block</a></p>
+
+    <p>
+      <a href="javascript:;" id="theme-light">🌞 浅色</a>
+      <a href="javascript:;" id="theme-dark">🌛 深色</a>
+      <a href="javascript:;" id="theme-auto">🤖️ 自动</a>
+    </p>
+  </div>
+</footer>
+  </div>
+
+  <div class="back-to-top-fixed soft-size--round soft-style--box">
+    <svg class="icon icon-back-to-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <path d="M725.333333 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8l-213.333333-213.333333c-17.066667-17.066667-17.066667-42.666667 0-59.733333s42.666667-17.066667 59.733333 0l213.333333 213.333333c17.066667 17.066667 17.066667 42.666667 0 59.733333C746.666667 422.4 738.133333 426.666667 725.333333 426.666667z"></path>
+      <path d="M298.666667 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8-17.066667-17.066667-17.066667-42.666667 0-59.733333l213.333333-213.333333c17.066667-17.066667 42.666667-17.066667 59.733333 0s17.066667 42.666667 0 59.733333l-213.333333 213.333333C320 422.4 311.466667 426.666667 298.666667 426.666667z"></path>
+      <path d="M512 896c-25.6 0-42.666667-17.066667-42.666667-42.666667L469.333333 170.666667c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 682.666667C554.666667 878.933333 537.6 896 512 896z"></path>
+    </svg>
+  </div>
+
+  
+  <!-- aplayer -->
+
+
+<!-- dplayer -->
+
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+  
+  <!-- 尾部用户自定义相关内容 -->
+</body>
+</html>
